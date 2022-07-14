@@ -1,0 +1,272 @@
+<project name="test" default="sync" xmlns:sf="antlib:com.salesforce">
+	<property environment="env"/>
+	<property name="sf.username"      value="${env.username}"/>
+	<property name="sf.password"      value="${env.password}"/>
+	<property name="sf.clientId"      value="${env.clientId}"/>
+	<property name="sf.clientSecret"      value="${env.clientSecret}"/>
+	<property name="sf.refreshToken"      value="${env.refreshToken}"/>
+	<property name="sf.serverurl"      value="${env.serverurl}"/>
+	<property name="sf.branch"      value="${env.branch}"/>
+	<property name="canDeploy" value="false"/>
+	<property name="canDeployNew" value="false"/>
+	
+	<!-- <property name="sf.fetchFromDuration"      value="${env.fetchFromDuration}"/> -->
+	<taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+		<classpath>
+			<pathelement location="lib/ant-salesforce.jar"/>
+		</classpath>
+	</taskdef>
+	<taskdef resource="net/sf/antcontrib/antlib.xml">
+		<classpath>
+			<pathelement location="lib/ant-contrib-1.0b3.jar"/>
+		</classpath>
+	</taskdef>
+	<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask">
+		<classpath>
+			<pathelement location="lib/xmltask.jar"/>
+		</classpath>
+	</taskdef>
+    <macrodef name="gitDiff">
+		<sequential>
+			<exec executable="git" outputproperty="git.diff">
+				<arg value="diff" />
+				<arg value="--pretty=format:" />
+				<arg value="--name-only" />
+				<arg value="${env.GIT_COMMIT}" />
+				<arg value="${env.GIT_PREVIOUS_SUCCESSFUL_COMMIT}" />
+			</exec>
+			<echo message="Git difference is ${git.diff}."/>
+		</sequential>
+	</macrodef>
+
+	<target name="diffBuilderWithGitCommit">
+		<!--<delete dir="${sf.deployDir}"/>
+		<mkdir dir="${sf.deployDir}"/>
+		<copy file="${sf.samplePackageXML}" tofile="${sf.deployDir}/package.xml"/>-->
+		<echo>Current GIT Commit : ${env.GIT_COMMIT}</echo>
+		<echo>Previous Known Successful GIT Commit : ${env.GIT_PREVIOUS_SUCCESSFUL_COMMIT}</echo>
+
+		<if>
+			<equals arg1="${env.GIT_PREVIOUS_SUCCESSFUL_COMMIT}" arg2="null"/>
+			<then>
+				<echo>Previous Successful Commit is Null</echo>
+				<var name="sf.deployDir" unset="true"/>
+				<property name="sf.deployDir"      value="codepkg"/>
+				<copy file="${sf.samplePackageXML}" tofile="${sf.deployDir}/package.xml" overwrite="true"/>
+				<var name="canDeploy" unset="true"/>
+				<property name="canDeploy" value="true"/>
+			</then>
+			<else>
+				<echo>Previous Successful Commit is Not Null</echo>
+				<delete dir="${sf.deployDir}"/>
+				<mkdir dir="${sf.deployDir}"/>
+				<copy file="${sf.samplePackageXML}" tofile="${sf.deployDir}/package.xml"/>
+				<gitDiff/>
+				<for list="${git.diff}" param="currentDiff" delimiter="${line.separator}">
+					<sequential>
+					<echo>Current diff : @{currentDiff}</echo>
+				<if>
+					<and>
+						<available file="@{currentDiff}"/>
+						<matches string="@{currentDiff}" pattern="codepkg/"/>
+						<not>
+						      <matches string="@{currentDiff}" pattern="package.xml"/>
+						</not>
+					</and>
+					<then>
+								<propertyregex
+									property="currentDiffWithoutSRC"
+									input="@{currentDiff}"
+									regexp="codepkg\/([a-zA-Z$]*\/[a-zA-Z0-9\/\.\_-]*)"
+									select="\1"
+									casesensitive="true" 
+									override="true"
+									defaultValue=""/>
+								<echo>Current Component : ${currentDiffWithoutSRC}</echo>
+								<copy todir="${sf.deployDir}" verbose="false">
+									<fileset dir="codepkg">
+										<include name="${currentDiffWithoutSRC}" />
+									</fileset>
+								</copy>
+								<if>
+									<available file="@{currentDiff}-meta.xml"/>
+									<then>
+										<echo>Generating meta-xml : @{currentDiff}</echo>
+										<copy todir="${sf.deployDir}" verbose="false">
+											<fileset dir="codepkg">
+												<include name="${currentDiffWithoutSRC}-meta.xml" />
+											</fileset>
+										</copy>
+									</then>
+								</if>
+
+								<if>
+									<matches string="@{currentDiff}" pattern="codepkg/aura/"/>
+									<then>
+										<propertyregex
+											property="auraCmp"
+											input="@{currentDiff}"
+											regexp="codepkg\/aura\/([a-zA-Z0-9\_]*)"
+											select="\1"
+											casesensitive="true" 
+											override="true"
+											defaultValue=""/>
+										<echo>Aura Component : ${auraCmp}</echo>
+										<copy todir="${sf.deployDir}" verbose="false">
+											<fileset dir="codepkg">
+												<include name="aura/${auraCmp}/**" />
+											</fileset>
+										</copy>
+									</then>
+								</if>
+
+						<var name="canDeploy" unset="true"/>
+						<property name="canDeploy" value="true"/>
+					</then>
+				</if>
+				</sequential>
+			</for>
+			</else>
+		</if>
+
+		<!-- Enable below 5 lines of code if there is problem with differential deployment for a quick fix-->
+		<!--<var name="sf.deployDir" unset="true"/>
+		<property name="sf.deployDir"      value="codepkg"/>
+		<copy file="${sf.samplePackageXML}" tofile="${sf.deployDir}/package.xml" overwrite="true"/>
+		<var name="canDeploy" unset="true"/>
+		<property name="canDeploy" value="true"/>-->
+
+    </target>
+
+	<property file="build.properties"/>
+	
+    <target name="ret">
+    	<mkdir dir="src"/>
+    	<sf:retrieve username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="src" unpackaged="package.xml"/>
+    </target>
+
+    <target name="deploy">
+		<echo>Deployment Begins...</echo>
+		<echo>Can Deploy :${canDeploy}</echo>
+		<echo>Deploy Directory :${sf.deployDir}</echo>
+		<if>
+			<and><equals arg1="${canDeploy}" arg2="true"/> </and>
+			<then>
+				<!--<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="${sf.deployDir}" rollbackOnError="true"/>-->
+				<sf:deploy username="${sf.username}" password="${sf.password}" 
+							serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" 
+							deployRoot="${sf.deployDir}" rollbackOnError="true"
+							>
+				</sf:deploy>
+			</then>
+			<else>
+				<echo>Nothing to deploy</echo>
+			</else>
+		</if>
+    </target>
+	
+	<target name="getSessionId">
+    	<exec executable="curl" outputproperty="curl.result">
+			<arg line="-X POST ${sf.serverurl}/services/oauth2/token?grant_type=refresh_token&amp;client_id=${sf.clientId}&amp;client_secret=${sf.clientSecret}&amp;refresh_token=${sf.refreshToken}"/>
+		</exec>
+		<echo>${curl.result}</echo>
+		<for param="line" list="${curl.result}" delimiter="${line.separator}">
+		 <sequential>
+			<if>
+				<matches pattern="${response.regex}" string="@{line}"/>
+				<then>
+					<propertyregex
+						property="accessToken"
+						input="@{line}"
+						regexp="${response.regex}"
+						select="\1"
+						casesensitive="false"/>
+				</then>
+			</if>
+		  </sequential>
+		</for>
+		<echo>Access Token Obtained From Salesforce :  ${accessToken}</echo>
+    </target>
+	
+	<target name="deployProd" depends="getSessionId">
+		<echo>Deployment Begins...</echo>
+		<if>
+			<and><equals arg1="${canDeploy}" arg2="true"/> </and>
+			<then>
+				<fail message="Test Class Not Specified" unless="env.testClass"/>
+				<echo>${env.testClass}</echo>
+				<script language="javascript"><![CDATA[
+				var deployTask = project.createTask('antlib:com.salesforce:deploy');
+				deployTask.setSessionId(project.getProperty("accessToken"));
+				deployTask.setServerURL(project.getProperty("sf.serverurl"));
+				deployTask.setDeployRoot(project.getProperty("sf.deployDir"));
+				deployTask.setTestLevel('RunSpecifiedTests');
+				deployTask.setMaxPoll(project.getProperty("sf.maxPoll"));
+				var tests = project.getProperty("env.testClass");
+				if (tests) {
+					deployTask.setTestLevel('RunSpecifiedTests');
+					tests = tests.split(',');
+					for (var i = 0; i < tests.length; i++) {
+						var runTest = java.lang.Class.forName(
+						"com.salesforce.ant.DeployTask$CodeNameElement"
+						).newInstance();
+						runTest.addText(tests[i]);
+						deployTask.addRunTest(runTest);
+					}
+					deployTask.perform();
+				}
+				]]></script>
+			</then>
+			<else>
+				<echo>Nothing to deploy</echo>
+			</else>
+		</if>
+    </target>
+	
+	<target name="validateProd" depends="getSessionId">
+		<echo>Validation Begins...</echo>
+		<if>
+			<and><equals arg1="${canDeploy}" arg2="true"/> </and>
+			<then>
+				<fail message="Test Class Not Specified" unless="env.testClass"/>
+				<echo>${env.testClass}</echo>
+				<script language="javascript"><![CDATA[
+				var deployTask = project.createTask('antlib:com.salesforce:deploy');
+				deployTask.setSessionId(project.getProperty("accessToken"));
+				deployTask.setServerURL(project.getProperty("sf.serverurl"));
+				deployTask.setDeployRoot(project.getProperty("sf.deployDir"));
+				deployTask.setCheckonly(true);
+				deployTask.setTestLevel('RunSpecifiedTests');
+				deployTask.setMaxPoll(project.getProperty("sf.maxPoll"));
+				var tests = project.getProperty("env.testClass");
+				if (tests) {
+					deployTask.setTestLevel('RunSpecifiedTests');
+					tests = tests.split(',');
+					for (var i = 0; i < tests.length; i++) {
+						var runTest = java.lang.Class.forName(
+						"com.salesforce.ant.DeployTask$CodeNameElement"
+						).newInstance();
+						runTest.addText(tests[i]);
+						deployTask.addRunTest(runTest);
+					}
+					deployTask.perform();
+				}
+				]]></script>
+			</then>
+			<else>
+				<echo>Nothing to deploy</echo>
+			</else>
+		</if>
+    </target>
+
+	<target name="builderWithGitDiff" depends="diffBuilderWithGitCommit,deploy">
+		
+    </target>
+	
+	<target name="builderProd" depends="diffBuilderWithGitCommit,deployProd">
+		
+    </target>
+	<target name="builderValidateProd" depends="diffBuilderWithGitCommit,validateProd">
+		
+    </target>
+</project>

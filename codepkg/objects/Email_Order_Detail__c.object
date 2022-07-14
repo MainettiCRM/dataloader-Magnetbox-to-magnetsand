@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This Object contains all the details of Email addresses and User groups to which Mail should be sent on creation of Order.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Additional_Email_Addresses__c</fullName>
+        <description>This field should contain additional Email addresses if any.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field should contain additional Email addresses which are not as part of Group.</inlineHelpText>
+        <label>Additional Email Addresses</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Alert_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Alert Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inventory Allocation</fullName>
+                    <default>false</default>
+                    <label>Inventory Allocation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Group_Name__c</fullName>
+        <description>This should Contain User Group Name</description>
+        <externalId>false</externalId>
+        <label>Group Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InternalCSUrl__c</fullName>
+        <externalId>false</externalId>
+        <label>InternalCSUrl</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Market</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_to_Country__c</fullName>
+        <description>These are list of Countries, For each country there is a specific group and mail should be sent to that group.</description>
+        <externalId>false</externalId>
+        <label>Order to Country</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Australia - Mainetti Australia Pty Ltd</fullName>
+                    <default>false</default>
+                    <label>Australia - Mainetti Australia Pty Ltd</label>
+                </value>
+                <value>
+                    <fullName>Bangladesh - Bengal Plastic Industries</fullName>
+                    <default>false</default>
+                    <label>Bangladesh - Bengal Plastic Industries</label>
+                </value>
+                <value>
+                    <fullName>Bangladesh - Mainetti (Bangladesh) PVT Ltd</fullName>
+                    <default>false</default>
+                    <label>Bangladesh - Mainetti (Bangladesh) PVT Ltd</label>
+                </value>
+                <value>
+                    <fullName>Cambodia - Jin Jin</fullName>
+                    <default>false</default>
+                    <label>Cambodia - Jin Jin</label>
+                </value>
+                <value>
+                    <fullName>Cambodia - Jinjin Cambodia Co. Ltd</fullName>
+                    <default>false</default>
+                    <label>Cambodia - Jinjin Cambodia Co. Ltd</label>
+                </value>
+                <value>
+                    <fullName>Central Americas -  H.B. Trim Co. Inc.</fullName>
+                    <default>false</default>
+                    <label>Central Americas -  H.B. Trim Co. Inc.</label>
+                </value>
+                <value>
+                    <fullName>China - Suzhou Mainetti Plastic Products Ltd</fullName>
+                    <default>false</default>
+                    <label>China - Suzhou Mainetti Plastic Products Ltd</label>
+                </value>
+                <value>
+                    <fullName>Egypt - Elkekhia Group Ltd</fullName>
+                    <default>false</default>
+                    <label>Egypt - Elkekhia Group Ltd</label>
+                </value>
+                <value>
+                    <fullName>Fletcher</fullName>
+                    <default>false</default>
+                    <label>Fletcher</label>
+                </value>
+                <value>
+                    <fullName>France - Roybier et Fils</fullName>
+                    <default>false</default>
+                    <label>France - Roybier et Fils</label>
+                </value>
+                <value>
+                    <fullName>Guatemala - H.B. International Trim , S.A</fullName>
+                    <default>false</default>
+                    <label>Guatemala - H.B. International Trim , S.A</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong - Mainetti (HK) Ltd</fullName>
+                    <default>false</default>
+                    <label>Hong Kong - Mainetti (HK) Ltd</label>
+                </value>
+                <value>
+                    <fullName>India - Mainetti (India) Pvt Ltd</fullName>
+                    <default>false</default>
+                    <label>India - Mainetti (India) Pvt Ltd</label>
+                </value>
+                <value>
+                    <fullName>Indonesia - PT. Mainetti Packaging Solution</fullName>
+                    <default>false</default>
+                    <label>Indonesia - PT. Mainetti Packaging Solution</label>
+                </value>
+                <value>
+                    <fullName>Italy - Mainetti Omaf Srl</fullName>
+                    <default>false</default>
+                    <label>Italy - Mainetti Omaf Srl</label>
+                </value>
+                <value>
+                    <fullName>Italy - Mainetti SpA</fullName>
+                    <default>false</default>
+                    <label>Italy - Mainetti SpA</label>
+                </value>
+                <value>
+                    <fullName>Korea - Mainetti Korea Co. Ltd</fullName>
+                    <default>false</default>
+                    <label>Korea - Mainetti Korea Co. Ltd</label>
+                </value>
+                <value>
+                    <fullName>Malaysia - MHL Industries (Malaysia) Sdn Bhd</fullName>
+                    <default>false</default>
+                    <label>Malaysia - MHL Industries (Malaysia) Sdn Bhd</label>
+                </value>
+                <value>
+                    <fullName>Mexico - Ganchos Freilaj</fullName>
+                    <default>false</default>
+                    <label>Mexico - Ganchos Freilaj</label>
+                </value>
+                <value>
+                    <fullName>Morocco - Mainetti Smaco SA</fullName>
+                    <default>false</default>
+                    <label>Morocco - Mainetti Smaco SA</label>
+                </value>
+                <value>
+                    <fullName>Netherlands - Mainetti BV</fullName>
+                    <default>false</default>
+                    <label>Netherlands - Mainetti BV</label>
+                </value>
+                <value>
+                    <fullName>North China – Suzhou Mainetti Plastic Products Ltd</fullName>
+                    <default>false</default>
+                    <label>North China – Suzhou Mainetti Plastic Products Ltd</label>
+                </value>
+                <value>
+                    <fullName>Others</fullName>
+                    <default>false</default>
+                    <label>Others</label>
+                </value>
+                <value>
+                    <fullName>Pakistan - Alupak</fullName>
+                    <default>false</default>
+                    <label>Pakistan - Alupak</label>
+                </value>
+                <value>
+                    <fullName>Pakistan - Mainetti Pakistan (Pvt) Ltd.</fullName>
+                    <default>false</default>
+                    <label>Pakistan - Mainetti Pakistan (Pvt) Ltd.</label>
+                </value>
+                <value>
+                    <fullName>Peru - Hangers Trading E.I.R.L.</fullName>
+                    <default>false</default>
+                    <label>Peru - Hangers Trading E.I.R.L.</label>
+                </value>
+                <value>
+                    <fullName>Philippines - Lexan</fullName>
+                    <default>false</default>
+                    <label>Philippines - Lexan</label>
+                </value>
+                <value>
+                    <fullName>Philippines - Lexan Industrial Corporation</fullName>
+                    <default>false</default>
+                    <label>Philippines - Lexan Industrial Corporation</label>
+                </value>
+                <value>
+                    <fullName>Portugal - Mainetti Cabides, Lda</fullName>
+                    <default>false</default>
+                    <label>Portugal - Mainetti Cabides, Lda</label>
+                </value>
+                <value>
+                    <fullName>Romania - Mainetti Romania S.R.L.</fullName>
+                    <default>false</default>
+                    <label>Romania - Mainetti Romania S.R.L.</label>
+                </value>
+                <value>
+                    <fullName>Singapore - MAINETTI SEA PTE LTD</fullName>
+                    <default>false</default>
+                    <label>Singapore - MAINETTI SEA PTE LTD</label>
+                </value>
+                <value>
+                    <fullName>South China / Hong Kong – Mainetti (HK) Ltd</fullName>
+                    <default>false</default>
+                    <label>South China / Hong Kong – Mainetti (HK) Ltd</label>
+                </value>
+                <value>
+                    <fullName>South China / Hong Kong - MainettiCare Health Technologies</fullName>
+                    <default>false</default>
+                    <label>South China / Hong Kong - MainettiCare Health Technologies</label>
+                </value>
+                <value>
+                    <fullName>Spain - Nueva Mainetti, S.A.</fullName>
+                    <default>false</default>
+                    <label>Spain - Nueva Mainetti, S.A.</label>
+                </value>
+                <value>
+                    <fullName>Sri Lanka - Mainettech Lanka (Pvt) Ltd.</fullName>
+                    <default>false</default>
+                    <label>Sri Lanka - Mainettech Lanka (Pvt) Ltd.</label>
+                </value>
+                <value>
+                    <fullName>Sri Lanka - Mainettech Lanka Pvt Ltd</fullName>
+                    <default>false</default>
+                    <label>Sri Lanka - Mainettech Lanka Pvt Ltd</label>
+                </value>
+                <value>
+                    <fullName>Taiwan - Kuang-Kai Ind. Co, Ltd.</fullName>
+                    <default>false</default>
+                    <label>Taiwan - Kuang-Kai Ind. Co, Ltd.</label>
+                </value>
+                <value>
+                    <fullName>Taiwan -  Zhangjiagang FTZ Kang Kai Plastic &amp; Mould co ltd</fullName>
+                    <default>false</default>
+                    <label>Taiwan -  Zhangjiagang FTZ Kang Kai Plastic &amp; Mould co ltd</label>
+                </value>
+                <value>
+                    <fullName>Thailand - Plastic World</fullName>
+                    <default>false</default>
+                    <label>Thailand - Plastic World</label>
+                </value>
+                <value>
+                    <fullName>Turkey - Mainetti Aski Sanayi ve Ticaret AS</fullName>
+                    <default>false</default>
+                    <label>Turkey - Mainetti Aski Sanayi ve Ticaret AS</label>
+                </value>
+                <value>
+                    <fullName>UK - Mainetti (UK) Ltd</fullName>
+                    <default>false</default>
+                    <label>UK - Mainetti (UK) Ltd</label>
+                </value>
+                <value>
+                    <fullName>United Arab Emirates/Jordan - Garment Trims &amp; Accessories</fullName>
+                    <default>false</default>
+                    <label>United Arab Emirates/Jordan - Garment Trims &amp; Accessories</label>
+                </value>
+                <value>
+                    <fullName>United Arab Emirates/Jordan - Garment Trims And Accessories (FZE) - GTA</fullName>
+                    <default>false</default>
+                    <label>United Arab Emirates/Jordan - Garment Trims And Accessories (FZE) - GTA</label>
+                </value>
+                <value>
+                    <fullName>USA / Canada (East) - Mainetti USA Inc.</fullName>
+                    <default>false</default>
+                    <label>USA / Canada (East) - Mainetti USA Inc.</label>
+                </value>
+                <value>
+                    <fullName>USA / Canada (West) - Mainetti Group California</fullName>
+                    <default>false</default>
+                    <label>USA / Canada (West) - Mainetti Group California</label>
+                </value>
+                <value>
+                    <fullName>USA - Partner</fullName>
+                    <default>false</default>
+                    <label>USA - Partner</label>
+                </value>
+                <value>
+                    <fullName>Vietnam - Mainetti (Vietnam) Co., Ltd</fullName>
+                    <default>false</default>
+                    <label>Vietnam - Mainetti (Vietnam) Co., Ltd</label>
+                </value>
+                <value>
+                    <fullName>Vietnam - Mainetti Vietnam Co. Ltd</fullName>
+                    <default>false</default>
+                    <label>Vietnam - Mainetti Vietnam Co. Ltd</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Retailer_Code__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Retailer Code</label>
+        <referenceTo>Retailer_Code__c</referenceTo>
+        <relationshipLabel>Email Order Details</relationshipLabel>
+        <relationshipName>Email_Order_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>URLString__c</fullName>
+        <externalId>false</externalId>
+        <label>URLString</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Email Order Detail</label>
+    <listViews>
+        <fullName>All_Ivy</fullName>
+        <columns>NAME</columns>
+        <columns>Group_Name__c</columns>
+        <columns>Order_to_Country__c</columns>
+        <columns>Additional_Email_Addresses__c</columns>
+        <columns>Market__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>URLString__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All_List</label>
+    </listViews>
+    <listViews>
+        <fullName>EU_Market</fullName>
+        <columns>NAME</columns>
+        <columns>Group_Name__c</columns>
+        <columns>Order_to_Country__c</columns>
+        <columns>Additional_Email_Addresses__c</columns>
+        <columns>Market__c</columns>
+        <columns>URLString__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Market__c</field>
+            <operation>contains</operation>
+            <value>EU</value>
+        </filters>
+        <label>_EU Market</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>InvAllocation_DECATHLON</fullName>
+        <columns>NAME</columns>
+        <columns>Group_Name__c</columns>
+        <columns>Order_to_Country__c</columns>
+        <columns>Additional_Email_Addresses__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>URLString__c</columns>
+        <columns>Alert_Type__c</columns>
+        <columns>Retailer_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Retailer_Code__c</field>
+            <operation>equals</operation>
+            <value>DECATHLON</value>
+        </filters>
+        <filters>
+            <field>Alert_Type__c</field>
+            <operation>equals</operation>
+            <value>Inventory Allocation</value>
+        </filters>
+        <label>_InvAllocation_DECATHLON</label>
+        <sharedTo>
+            <role>Administrator_Role</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>InvAllocation_TARGET</fullName>
+        <columns>NAME</columns>
+        <columns>Group_Name__c</columns>
+        <columns>Order_to_Country__c</columns>
+        <columns>Additional_Email_Addresses__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>URLString__c</columns>
+        <columns>Alert_Type__c</columns>
+        <columns>Retailer_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Retailer_Code__c</field>
+            <operation>equals</operation>
+            <value>TARGET</value>
+        </filters>
+        <filters>
+            <field>Alert_Type__c</field>
+            <operation>equals</operation>
+            <value>Inventory Allocation</value>
+        </filters>
+        <label>_InvAllocation_TARGET</label>
+        <sharedTo>
+            <role>Administrator_Role</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Macre</fullName>
+        <columns>NAME</columns>
+        <columns>Group_Name__c</columns>
+        <columns>Order_to_Country__c</columns>
+        <columns>Additional_Email_Addresses__c</columns>
+        <columns>Market__c</columns>
+        <columns>URLString__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Order_to_Country__c</field>
+            <operation>equals</operation>
+            <value>South China / Hong Kong - MainettiCare Health Technologies</value>
+        </filters>
+        <label>__MCare</label>
+    </listViews>
+    <listViews>
+        <fullName>REST_Market</fullName>
+        <columns>NAME</columns>
+        <columns>Group_Name__c</columns>
+        <columns>Order_to_Country__c</columns>
+        <columns>Additional_Email_Addresses__c</columns>
+        <columns>Market__c</columns>
+        <columns>URLString__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Market__c</field>
+            <operation>contains</operation>
+            <value>REST</value>
+        </filters>
+        <label>_REST Market</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>UK_Market</fullName>
+        <columns>NAME</columns>
+        <columns>Group_Name__c</columns>
+        <columns>Order_to_Country__c</columns>
+        <columns>Additional_Email_Addresses__c</columns>
+        <columns>Market__c</columns>
+        <columns>URLString__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Market__c</field>
+            <operation>contains</operation>
+            <value>UK</value>
+        </filters>
+        <label>_UK Market</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>US_Market</fullName>
+        <columns>NAME</columns>
+        <columns>Group_Name__c</columns>
+        <columns>Order_to_Country__c</columns>
+        <columns>Additional_Email_Addresses__c</columns>
+        <columns>Market__c</columns>
+        <columns>URLString__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Market__c</field>
+            <operation>contains</operation>
+            <value>US</value>
+        </filters>
+        <label>_US Market</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>EMAIL-{0000}</displayFormat>
+        <label>Email Order Detail Name</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Email Order Details</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Group_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Market__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Order_to_Country__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Additional_Email_Addresses__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>URLString__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>InternalCSUrl__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Group_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Order_to_Country__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Market__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Additional_Email_Addresses__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>URLString__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>InternalCSUrl__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Group_Name__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Market__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Order_to_Country__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Additional_Email_Addresses__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>URLString__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>InternalCSUrl__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Group_Name__c</searchFilterFields>
+        <searchFilterFields>Market__c</searchFilterFields>
+        <searchFilterFields>Order_to_Country__c</searchFilterFields>
+        <searchFilterFields>URLString__c</searchFilterFields>
+        <searchFilterFields>InternalCSUrl__c</searchFilterFields>
+        <searchResultsAdditionalFields>Group_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Additional_Email_Addresses__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Market__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Order_to_Country__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>URLString__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>InternalCSUrl__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,10 @@
+Load_ID__c=Load_ID__c
+Company__c=Company__c
+Country__c=Country__c
+CurrencyIsoCode=CurrencyIsoCode
+Description__c=Description__c
+Map_From_Value__c=Map_From_Value__c
+Map_To_Value__c=Map_To_Value__c
+Raw_Data_Field__c=Raw_Data_Field__c
+Status__c=Status__c
+Error_Map_Type__c=Error_Map_Type__c

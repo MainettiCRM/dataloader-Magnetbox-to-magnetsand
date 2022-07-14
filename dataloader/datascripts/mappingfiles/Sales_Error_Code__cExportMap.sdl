@@ -1,0 +1,12 @@
+Id=Load_ID__c
+Active__c=Active__c
+CurrencyIsoCode=CurrencyIsoCode
+Error_Description__c=Error_Description__c
+Error_Detail_Report_Link__c=Error_Detail_Report_Link__c
+Error_Message__c=Error_Message__c
+Error_Records__c=Error_Records__c
+Error_Type__c=Error_Type__c
+Record_Code_Type__c=Record_Code_Type__c
+Name=Name
+Error_Correction__c=Error_Correction__c
+Hot_Topic__c=Hot_Topic__c

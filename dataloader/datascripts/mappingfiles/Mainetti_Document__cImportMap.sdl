@@ -1,0 +1,5 @@
+Load_ID__c=Load_ID__c
+Active__c=Active__c
+CurrencyIsoCode=CurrencyIsoCode
+Product_Unique_ID__c=Product_Unique_ID__r:\Load_ID__c
+Retailer_Code__c=Retailer_Code__r:\Load_ID__c

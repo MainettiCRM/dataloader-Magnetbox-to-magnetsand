@@ -1,0 +1,11 @@
+Load_ID__c=Load_ID__c
+Art_Code__c=Art_Code__c
+Name=Name
+Brand_Icon__c=Brand_Icon__c
+CareLabelConfigurator__c=CareLabelConfigurator__r:\Load_ID__c
+Category__c=Category__c
+CurrencyIsoCode=CurrencyIsoCode
+Image__c=Image__c
+Product__c=Product__r:\Load_ID__c
+Retailer_Code__c=Retailer_Code__r:\Load_ID__c
+

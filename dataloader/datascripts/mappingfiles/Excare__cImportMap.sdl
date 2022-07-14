@@ -1,0 +1,15 @@
+Load_ID__c=Load_ID__c
+CurrencyIsoCode=CurrencyIsoCode
+Description__c=Description__c
+Description1__c=Description1__c
+Description2__c=Description2__c
+Name=Name
+Language_1__c=Language_1__c
+Language_2__c=Language_2__c
+Language_3__c=Language_3__c
+Language_4__c=Language_4__c
+Language_5__c=Language_5__c
+Position__c=Position__c
+Retailer__c=Retailer__r:\Load_ID__c
+Retailer_Code__c=Retailer_Code__c
+

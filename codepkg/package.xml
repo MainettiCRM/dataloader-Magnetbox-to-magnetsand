@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Fabric_Component__c.Category__c</members>
+        <members>Fabric_Component__c.Fabric_Component_c__c</members>
+        <members>Fabric_Component__c.Material_Name__c</members>
+        <members>Fabric_Component__c.Material__c</members>
+        <members>Label_Division__c.Label__c</members>
+        <members>Product__c.Business_Vertical__c</members>
+        <members>Product__c.Product_Family__c</members>
+        <members>Product__c.Product_Type__c</members>
+        <members>Product__c.Sub_category__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Base_Order__c</members>
+        <members>Base_Order_Detail__c</members>
+        <members>Brand__c</members>
+        <members>Care_Label_Export__c</members>
+        <members>Care_Label_Order_Line__c</members>
+        <members>Care_instruction_detail__c</members>
+        <members>Country_Of_Origin__c</members>
+        <members>Email_Order_Detail__c</members>
+        <members>Excare__c</members>
+        <members>Exchange_Rate__c</members>
+        <members>Fabric_Component__c</members>
+        <members>Item_Master__c</members>
+        <members>Label_Division__c</members>
+        <members>Language__c </members>
+        <members>Partner__c</members>
+        <members>Price_Product_by_Currency__c</members>
+        <members>Price_Specification_Book_Product__c</members>
+        <members>Price_Specification_Book__c</members>
+        <members>Product__c</members>
+        <members>Retailer_Code__c</members>
+        <members>Sales_Error_Code__c</members>
+        <members>Sales_Error_Mapping__c</members>
+        <members>Size_Chart__c</members>
+        <members>Sys_Capex_Auto_Num__c</members>
+        <members>Variable_Data_Mapping__c</members>
+        <members>Variable_Data_Upload_LineItem__c</members>
+        <members>Variable_Data_Upload__c</members>
+        <name>CustomObject</name>
+    </types>
+    <version>51.0</version>
+</Package>

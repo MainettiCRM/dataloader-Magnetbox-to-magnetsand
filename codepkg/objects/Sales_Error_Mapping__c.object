@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Batch_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>Upload_Batch_No__r.Batch_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Batch No.</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company__c</fullName>
+        <externalId>false</externalId>
+        <label>Company</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>America Mid West - Hangers Unlimited</fullName>
+                    <default>false</default>
+                    <label>America Mid West - Hangers Unlimited</label>
+                </value>
+                <value>
+                    <fullName>Bangladesh</fullName>
+                    <default>false</default>
+                    <label>Bangladesh</label>
+                </value>
+                <value>
+                    <fullName>Bangladesh - Bengal</fullName>
+                    <default>false</default>
+                    <label>Bangladesh - Bengal</label>
+                </value>
+                <value>
+                    <fullName>Bangladesh Packaging</fullName>
+                    <default>false</default>
+                    <label>Bangladesh Packaging</label>
+                </value>
+                <value>
+                    <fullName>Belgium</fullName>
+                    <default>false</default>
+                    <label>Belgium</label>
+                </value>
+                <value>
+                    <fullName>Benelux</fullName>
+                    <default>false</default>
+                    <label>Benelux</label>
+                </value>
+                <value>
+                    <fullName>Brazil</fullName>
+                    <default>false</default>
+                    <label>Brazil</label>
+                </value>
+                <value>
+                    <fullName>Cambodia - Jin Jin</fullName>
+                    <default>false</default>
+                    <label>Cambodia - Jin Jin</label>
+                </value>
+                <value>
+                    <fullName>Canada</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>Colombia - Plasticso Ojara</fullName>
+                    <default>false</default>
+                    <label>Colombia - Plasticso Ojara</label>
+                </value>
+                <value>
+                    <fullName>Commerce CA</fullName>
+                    <default>false</default>
+                    <label>Commerce CA</label>
+                </value>
+                <value>
+                    <fullName>Dubai - El Kekhia JLT</fullName>
+                    <default>false</default>
+                    <label>Dubai - El Kekhia JLT</label>
+                </value>
+                <value>
+                    <fullName>Dubai - Hangsort</fullName>
+                    <default>false</default>
+                    <label>Dubai - Hangsort</label>
+                </value>
+                <value>
+                    <fullName>Egypt - El Kekhia Labels Packaging</fullName>
+                    <default>false</default>
+                    <label>Egypt - El Kekhia Labels Packaging</label>
+                </value>
+                <value>
+                    <fullName>Egypt - El Kekhia Plastics</fullName>
+                    <default>false</default>
+                    <label>Egypt - El Kekhia Plastics</label>
+                </value>
+                <value>
+                    <fullName>El Salvador - H.B. Trim Co. Inc.</fullName>
+                    <default>false</default>
+                    <label>El Salvador - H.B. Trim Co. Inc.</label>
+                </value>
+                <value>
+                    <fullName>France</fullName>
+                    <default>false</default>
+                    <label>France</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong</fullName>
+                    <default>false</default>
+                    <label>Hong Kong</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong Packaging</fullName>
+                    <default>false</default>
+                    <label>Hong Kong Packaging</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong - Ramie</fullName>
+                    <default>false</default>
+                    <label>Hong Kong - Ramie</label>
+                </value>
+                <value>
+                    <fullName>India</fullName>
+                    <default>false</default>
+                    <label>INDIA</label>
+                </value>
+                <value>
+                    <fullName>Indonesia</fullName>
+                    <default>false</default>
+                    <label>Indonesia</label>
+                </value>
+                <value>
+                    <fullName>Instore Agency AB</fullName>
+                    <default>false</default>
+                    <label>Instore Agency AB</label>
+                </value>
+                <value>
+                    <fullName>Italy - Mainetti Bags</fullName>
+                    <default>false</default>
+                    <label>Italy - Mainetti Bags</label>
+                </value>
+                <value>
+                    <fullName>Italy - OMAF</fullName>
+                    <default>false</default>
+                    <label>Italy - OMAF</label>
+                </value>
+                <value>
+                    <fullName>Italy - SpA</fullName>
+                    <default>false</default>
+                    <label>Italy - SpA</label>
+                </value>
+                <value>
+                    <fullName>Keasbey</fullName>
+                    <default>false</default>
+                    <label>Keasbey</label>
+                </value>
+                <value>
+                    <fullName>Korea</fullName>
+                    <default>false</default>
+                    <label>Korea</label>
+                </value>
+                <value>
+                    <fullName>Malaysia - MHL Industries (Malaysia) Sdn. Bhd</fullName>
+                    <default>false</default>
+                    <label>Malaysia - MHL Industries (Malaysia) Sdn. Bhd</label>
+                </value>
+                <value>
+                    <fullName>Mexico - Ganchos Freilaj</fullName>
+                    <default>false</default>
+                    <label>Mexico - Ganchos Freilaj</label>
+                </value>
+                <value>
+                    <fullName>Morocco</fullName>
+                    <default>false</default>
+                    <label>Morocco</label>
+                </value>
+                <value>
+                    <fullName>Netherlands</fullName>
+                    <default>false</default>
+                    <label>Netherlands</label>
+                </value>
+                <value>
+                    <fullName>Pakistan</fullName>
+                    <default>false</default>
+                    <label>Pakistan</label>
+                </value>
+                <value>
+                    <fullName>Peru - Hanger Trading E.I.R.L.</fullName>
+                    <default>false</default>
+                    <label>Peru - Hanger Trading E.I.R.L.</label>
+                </value>
+                <value>
+                    <fullName>Philippines - Lexan</fullName>
+                    <default>false</default>
+                    <label>Philippines - Lexan</label>
+                </value>
+                <value>
+                    <fullName>Portugal</fullName>
+                    <default>false</default>
+                    <label>Portugal</label>
+                </value>
+                <value>
+                    <fullName>Romania</fullName>
+                    <default>false</default>
+                    <label>Romania</label>
+                </value>
+                <value>
+                    <fullName>Shanghai</fullName>
+                    <default>false</default>
+                    <label>Shanghai</label>
+                </value>
+                <value>
+                    <fullName>Shanghai - R2</fullName>
+                    <default>false</default>
+                    <label>Shanghai - R2</label>
+                </value>
+                <value>
+                    <fullName>Singapore</fullName>
+                    <default>false</default>
+                    <label>Singapore</label>
+                </value>
+                <value>
+                    <fullName>Sri Lanka</fullName>
+                    <default>false</default>
+                    <label>Sri Lanka</label>
+                </value>
+                <value>
+                    <fullName>Sri Lanka Packaging</fullName>
+                    <default>false</default>
+                    <label>Sri Lanka Packaging</label>
+                </value>
+                <value>
+                    <fullName>Taiwan - Kuang Kai Industrial Ltd</fullName>
+                    <default>false</default>
+                    <label>Taiwan - Kuang Kai Industrial Ltd</label>
+                </value>
+                <value>
+                    <fullName>Thailand - Plastics World</fullName>
+                    <default>false</default>
+                    <label>Thailand - Plastics World</label>
+                </value>
+                <value>
+                    <fullName>Tijuana</fullName>
+                    <default>false</default>
+                    <label>Tijuana</label>
+                </value>
+                <value>
+                    <fullName>Turkey</fullName>
+                    <default>false</default>
+                    <label>Turkey</label>
+                </value>
+                <value>
+                    <fullName>UAE - GTA</fullName>
+                    <default>false</default>
+                    <label>UAE - GTA</label>
+                </value>
+                <value>
+                    <fullName>UK</fullName>
+                    <default>false</default>
+                    <label>UK</label>
+                </value>
+                <value>
+                    <fullName>Vietnam</fullName>
+                    <default>false</default>
+                    <label>Vietnam</label>
+                </value>
+                <value>
+                    <fullName>T K Chen Fu Co Ltd</fullName>
+                    <default>false</default>
+                    <label>T K Chen Fu Co Ltd</label>
+                </value>
+                <value>
+                    <fullName>PT Bintang Semesta Megah Makmur</fullName>
+                    <default>false</default>
+                    <label>PT Bintang Semesta Megah Makmur</label>
+                </value>
+                <value>
+                    <fullName>Thai Fashion Plastic Industrial Co Ltd</fullName>
+                    <default>false</default>
+                    <label>Thai Fashion Plastic Industrial Co Ltd</label>
+                </value>
+                <value>
+                    <fullName>El Salvador</fullName>
+                    <default>false</default>
+                    <label>El Salvador</label>
+                </value>
+                <value>
+                    <fullName>El Salvador - Salvaplastic International</fullName>
+                    <default>false</default>
+                    <label>El Salvador - Salvaplastic International</label>
+                </value>
+                <value>
+                    <fullName>KO</fullName>
+                    <default>false</default>
+                    <label>KO</label>
+                </value>
+                <value>
+                    <fullName>America - STAR GROUP</fullName>
+                    <default>false</default>
+                    <label>America - STAR GROUP</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong - STAR GROUP</fullName>
+                    <default>false</default>
+                    <label>Hong Kong - STAR GROUP</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong - RECA GROUP</fullName>
+                    <default>false</default>
+                    <label>Hong Kong - RECA GROUP</label>
+                </value>
+                <value>
+                    <fullName>Italy - RECA GROUP</fullName>
+                    <default>false</default>
+                    <label>Italy - RECA GROUP</label>
+                </value>
+                <value>
+                    <fullName>North Carolina</fullName>
+                    <default>false</default>
+                    <label>North Carolina</label>
+                </value>
+                <value>
+                    <fullName>Japan</fullName>
+                    <default>false</default>
+                    <label>Japan</label>
+                </value>
+                <value>
+                    <fullName>Test Company</fullName>
+                    <default>false</default>
+                    <label>Test Company</label>
+                </value>
+                <value>
+                    <fullName>Germany</fullName>
+                    <default>false</default>
+                    <label>Germany</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Map_From_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Map From Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Map_To_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Map To Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Raw_Data_Field__c</fullName>
+        <externalId>false</externalId>
+        <label>Raw Data Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Year</fullName>
+                    <default>false</default>
+                    <label>Year</label>
+                </value>
+                <value>
+                    <fullName>Week</fullName>
+                    <default>false</default>
+                    <label>Week</label>
+                </value>
+                <value>
+                    <fullName>Month</fullName>
+                    <default>false</default>
+                    <label>Month</label>
+                </value>
+                <value>
+                    <fullName>ItemCode</fullName>
+                    <default>false</default>
+                    <label>ItemCode</label>
+                </value>
+                <value>
+                    <fullName>Material</fullName>
+                    <default>false</default>
+                    <label>Material</label>
+                </value>
+                <value>
+                    <fullName>Source</fullName>
+                    <default>false</default>
+                    <label>Source</label>
+                </value>
+                <value>
+                    <fullName>PrintedLogo</fullName>
+                    <default>false</default>
+                    <label>PrintedLogo</label>
+                </value>
+                <value>
+                    <fullName>Color</fullName>
+                    <default>false</default>
+                    <label>Color</label>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>LocalName</fullName>
+                    <default>false</default>
+                    <label>LocalName</label>
+                </value>
+                <value>
+                    <fullName>MainettiBrand</fullName>
+                    <default>false</default>
+                    <label>MainettiBrand</label>
+                </value>
+                <value>
+                    <fullName>Model</fullName>
+                    <default>false</default>
+                    <label>MODEL</label>
+                </value>
+                <value>
+                    <fullName>Category</fullName>
+                    <default>false</default>
+                    <label>Category</label>
+                </value>
+                <value>
+                    <fullName>SubCategory</fullName>
+                    <default>false</default>
+                    <label>SubCategory</label>
+                </value>
+                <value>
+                    <fullName>Family</fullName>
+                    <default>false</default>
+                    <label>Family</label>
+                </value>
+                <value>
+                    <fullName>OrderType</fullName>
+                    <default>false</default>
+                    <label>OrderType</label>
+                </value>
+                <value>
+                    <fullName>UnitSold</fullName>
+                    <default>false</default>
+                    <label>UnitSold</label>
+                </value>
+                <value>
+                    <fullName>LocalCurrency</fullName>
+                    <default>false</default>
+                    <label>LocalCurrency</label>
+                </value>
+                <value>
+                    <fullName>ShippedToFactory</fullName>
+                    <default>false</default>
+                    <label>ShippedToFactory</label>
+                </value>
+                <value>
+                    <fullName>ShippedToCountry</fullName>
+                    <default>false</default>
+                    <label>ShippedToCountry</label>
+                </value>
+                <value>
+                    <fullName>Label</fullName>
+                    <default>false</default>
+                    <label>Label</label>
+                </value>
+                <value>
+                    <fullName>EndUser</fullName>
+                    <default>false</default>
+                    <label>EndUser</label>
+                </value>
+                <value>
+                    <fullName>Retailer</fullName>
+                    <default>false</default>
+                    <label>Retailer</label>
+                </value>
+                <value>
+                    <fullName>Division</fullName>
+                    <default>false</default>
+                    <label>Division</label>
+                </value>
+                <value>
+                    <fullName>RetailerBrand</fullName>
+                    <default>false</default>
+                    <label>RetailerBrand</label>
+                </value>
+                <value>
+                    <fullName>RoyaltyRate</fullName>
+                    <default>false</default>
+                    <label>RoyaltyRate</label>
+                </value>
+                <value>
+                    <fullName>Market</fullName>
+                    <default>false</default>
+                    <label>MARKET</label>
+                </value>
+                <value>
+                    <fullName>LOB</fullName>
+                    <default>false</default>
+                    <label>LOB</label>
+                </value>
+                <value>
+                    <fullName>SONumber</fullName>
+                    <default>false</default>
+                    <label>SONumber</label>
+                </value>
+                <value>
+                    <fullName>ProductionCountry</fullName>
+                    <default>false</default>
+                    <label>ProductionCountry</label>
+                </value>
+                <value>
+                    <fullName>TransactionCurrency</fullName>
+                    <default>false</default>
+                    <label>TransactionCurrency</label>
+                </value>
+                <value>
+                    <fullName>Period</fullName>
+                    <default>false</default>
+                    <label>Period</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>true</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>false</default>
+                    <label>Pending Approval</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>default is inactive</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>default is inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Upload_Batch_No__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Upload Batch No</label>
+        <referenceTo>Sales_Transaction_Stage__c</referenceTo>
+        <relationshipLabel>Sales Error Mapping</relationshipLabel>
+        <relationshipName>Sales_Error_Mapping</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Sales Error Mapping</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Map_From_Value__c</columns>
+        <columns>Map_To_Value__c</columns>
+        <columns>Raw_Data_Field__c</columns>
+        <columns>Company__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Raw_Data_Field__c</field>
+            <operation>equals</operation>
+            <value>SubCategory</value>
+        </filters>
+        <filters>
+            <field>Company__c</field>
+            <operation>equals</operation>
+            <value>Hong Kong Packaging</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Model</fullName>
+        <columns>NAME</columns>
+        <columns>Raw_Data_Field__c</columns>
+        <columns>Map_From_Value__c</columns>
+        <columns>Map_To_Value__c</columns>
+        <columns>Company__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Raw_Data_Field__c</field>
+            <operation>equals</operation>
+            <value>Model</value>
+        </filters>
+        <label>All Model</label>
+    </listViews>
+    <listViews>
+        <fullName>Brazil</fullName>
+        <columns>NAME</columns>
+        <columns>Map_From_Value__c</columns>
+        <columns>Map_To_Value__c</columns>
+        <columns>Raw_Data_Field__c</columns>
+        <columns>Company__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Company__c</field>
+            <operation>equals</operation>
+            <value>Brazil</value>
+        </filters>
+        <label>Brazil</label>
+    </listViews>
+    <listViews>
+        <fullName>Search</fullName>
+        <columns>NAME</columns>
+        <columns>Map_From_Value__c</columns>
+        <columns>Map_To_Value__c</columns>
+        <columns>Raw_Data_Field__c</columns>
+        <columns>Company__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Raw_Data_Field__c</field>
+            <operation>equals</operation>
+            <value>Retailer</value>
+        </filters>
+        <filters>
+            <field>Company__c</field>
+            <operation>equals</operation>
+            <value>Vietnam</value>
+        </filters>
+        <label>_Search</label>
+    </listViews>
+    <nameField>
+        <displayFormat>SEM-{000000}</displayFormat>
+        <label>Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sales Error Mapping</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,15 @@
+Id=Load_ID__c
+Book_Status__c=Book_Status__c
+Business_Vertical__c=Business_Vertical__c
+CurrencyIsoCode=CurrencyIsoCode
+Effective_Date__c=Effective_Date__c
+Expiry_Date__c=Expiry_Date__c
+Mainetti_Company__c=Mainetti_Company__c
+Market_Segment__c=Market_Segment__c
+OLE_Row_Id__c=OLE_Row_Id__c
+Name=Name
+Price_Book_Category__c=Price_Book_Category__c
+RecordTypeId=RecordTypeId
+Remarks__c=Remarks__c
+Retailer_Code__c=Retailer_Code__c
+

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Tasks for building and deploying to Salesforce" default="" basedir="." xmlns:sf="antlib:com.salesforce">
+
+	<property environment="env"/>
+
+	<property name="dataLoaderAPIVersion" value="29.0.0-uber" />
+
+	<!-- Define required jars-->
+	<path id="taskDependencies">
+		<pathelement location="./lib/ant.jar"/>
+        <pathelement location="./lib/antutils.jar"/>
+		<pathelement location="./lib/commons-io-2.4.jar"/>
+        <pathelement location="${basedir}/lib/commons-lang-2.6.jar"/>
+        <pathelement location="${basedir}/lib/commons-logging-1.1.3.jar"/>
+        <pathelement location="${basedir}/lib/gson-2.2.4.jar"/>
+        <pathelement location="${basedir}/lib/httpclient-4.3.5.jar"/>
+        <pathelement location="${basedir}/lib/httpcore-4.3.2.jar"/>
+        <pathelement location="${basedir}/lib/json-20080701.jar"/>
+	</path>
+
+	<taskdef uri="antlib:com.salesforce" resource="com/salesforce/antlib.xml" classpath="./lib/ant-salesforce.jar"/>
+
+
+	<!-- ============================================================ -->
+	<!-- Data export / import Targets 								  -->
+	<!-- ============================================================ -->
+    <target name="initDataDirectory" description="Removes and re-creates a blank data directory in orgs/${orgname}">
+        <delete dir="${basedir}/dataloader/orgs/${orgname}/data"/>
+        <mkdir dir="${basedir}/dataloader/orgs/${orgname}/data"/>
+    </target>
+
+	<target name="insertData" description="Export Salesforce objects">
+        <sfInsert object="${object}" orgserver="${sf.server}" basedir="${basedir}" orgname="${orgname}" username="${sf.username}" password="${sf.passwordencrypted}" />
+	</target>
+    
+    <target name="exportData" description="Export Salesforce objects">
+        <sfExport object="${object}" orgserver="${sf.orgserver}" basedir="${basedir}" orgname="${orgname}" username="${sf.username}" password="${sf.passwordencrypted}" soql="${soql}" />
+    </target>
+
+    <target name="upsertData" description="Upsert Salesforce objects">
+        <sfUpsert object="${object}" orgserver="${sf.orgserver}" basedir="${basedir}" orgname="${orgname}" username="${sf.username}" password="${sf.passwordencrypted}" externalIdField="Load_ID__c" />
+    </target>
+    
+    <target name="deleteData" description="Delete Salesforce objects">
+        <sfExport object="${object}" orgserver="${sf.orgserver}" basedir="${basedir}" orgname="${orgname}" username="${sf.username}" password="${sf.passwordencrypted}" soql="${soql}" />
+        <copy file="${basedir}/orgs/${orgname}/data/${object}Export.csv" tofile="${basedir}/datascripts/datafiles/${object}Delete.csv"/>
+        <sfDelete object="${object}" orgserver="${sf.orgserver}" basedir="${basedir}" orgname="${orgname}" username="${sf.username}" password="${sf.passwordencrypted}" />
+        <delete file="${basedir}/datascripts/datafiles/${object}Delete.csv" />
+    </target>
+	
+	<target name="updateDataFiles" description="Refreshes the data files found in datascripts/datafiles from a specified org's data directory.  This expects the exportData target to have been run first to generate output CSV data load files.  Specify the propertyfile for the org you want to copy the files from." >
+	    <copy todir="${basedir}/dataloader/datascripts/datafiles">
+		<fileset dir="${basedir}/dataloader/orgs/${orgname}/data" includes="**/*__cExport.csv"/>
+		<mapper type="glob" from="*__cExport.csv" to="*__cImport.csv"/>
+	    </copy>
+	</target>
+
+    <macrodef name="sfInsert">
+        <attribute name="object"/>
+		<attribute name="basedir"/>
+		<attribute name="orgname"/>
+		<attribute name="username"/>
+		<attribute name="password"/>
+		<attribute name="orgserver"/>
+
+        <sequential>
+            <echo message="Importing @{object}"/>
+            <mkdir dir="@{basedir}/orgs/@{orgname}/data"/>
+            <copy file="@{basedir}/datascripts/template-insert-process-conf.xml" tofile="@{basedir}/orgs/@{orgname}/data/process-conf.xml" overwrite="true" failonerror="true"/>
+            <replace file="@{basedir}/orgs/@{orgname}/data/process-conf.xml">
+                <replacefilter token="_ORGSERVER_" value="@{orgserver}"/>
+                <replacefilter token="_USERNAME_" value="@{username}"/>
+                <replacefilter token="_ENCRYPTED_PASSWORD_" value="@{password}"/>
+                <replacefilter token="_ENCRYPTION_KEY_FILE_" value="@{basedir}/datascripts/dataLoaderEncryption.key"/>
+                <replacefilter token="_DEBUG_MSG_FILE_" value="@{basedir}/orgs/@{orgname}/data/debug.log"/>
+                <replacefilter token="_OBJECT_" value="@{object}"/>
+                <replacefilter token="_DATA_FILENAME_" value="@{basedir}/datascripts/datafiles/@{object}Import.csv"/>
+                <replacefilter token="_MAPPING_FILE_" value="@{basedir}/datascripts/mappingfiles/@{object}ImportMap.sdl"/>
+                <replacefilter token="_OUTPUT_SUCCESS_FILE_" value="@{basedir}/orgs/@{orgname}/data/@{object}Import_success.csv"/>
+                <replacefilter token="_OUTPUT_ERROR_FILE_" value="@{basedir}/orgs/@{orgname}/data/@{object}Import_error.csv"/>
+            	<replacefilter token="_PROCESS_NAME_" value="@{object}ImportProcess"/>
+            </replace>
+            <java classname="com.salesforce.dataloader.process.ProcessRunner" classpath="@{basedir}/lib/dataloader-${dataLoaderAPIVersion}.jar" failonerror="true">
+                <sysproperty key="salesforce.config.dir" value="@{basedir}/orgs/@{orgname}/data"/>
+                <arg line="process.name=insertObject"/>
+            </java>
+        </sequential>
+    </macrodef>
+	
+	<macrodef name="sfUpsert">
+	        <attribute name="object"/>
+			<attribute name="basedir"/>
+			<attribute name="orgname"/>
+			<attribute name="username"/>
+			<attribute name="password"/>
+			<attribute name="orgserver"/>
+	    	<attribute name="externalIdField"/>
+
+	        <sequential>
+	            <echo message="Upserting @{object}"/>
+	            <mkdir dir="@{basedir}/dataloader/orgs/@{orgname}/data"/>
+	            <copy file="@{basedir}/dataloader/datascripts/template-upsert-process-conf.xml" tofile="@{basedir}/dataloader/orgs/@{orgname}/data/process-conf.xml" overwrite="true" failonerror="true"/>
+	            <replace file="@{basedir}/dataloader/orgs/@{orgname}/data/process-conf.xml">
+	                <replacefilter token="_ORGSERVER_" value="@{orgserver}"/>
+	                <replacefilter token="_USERNAME_" value="@{username}"/>
+	                <replacefilter token="_ENCRYPTED_PASSWORD_" value="@{password}"/>
+	                <replacefilter token="_ENCRYPTION_KEY_FILE_" value="@{basedir}/dataloader/datascripts/dataLoaderEncryption.key"/>
+	                <replacefilter token="_DEBUG_MSG_FILE_" value="@{basedir}/dataloader/orgs/@{orgname}/data/debug.log"/>
+	                <replacefilter token="_OBJECT_" value="@{object}"/>
+	                <replacefilter token="_DATA_FILENAME_" value="@{basedir}/dataloader/datascripts/datafiles/@{object}Import.csv"/>
+	                <replacefilter token="_MAPPING_FILE_" value="@{basedir}/dataloader/datascripts/mappingfiles/@{object}ImportMap.sdl"/>
+	                <replacefilter token="_OUTPUT_SUCCESS_FILE_" value="@{basedir}/dataloader/orgs/@{orgname}/data/@{object}Import_success.csv"/>
+	                <replacefilter token="_OUTPUT_ERROR_FILE_" value="@{basedir}/dataloader/orgs/@{orgname}/data/@{object}Import_error.csv"/>
+	            	<replacefilter token="_EXTERNAL_ID_FIELD_" value="@{externalIdField}"/>
+	            	<replacefilter token="_PROCESS_NAME_" value="@{object}UpsertProcess"/>
+	            </replace>
+	            <!--<java classname="com.salesforce.dataloader.process.ProcessRunner" classpath="@{basedir}/lib/dataloader-${dataLoaderAPIVersion}.jar" failonerror="true">
+	                <sysproperty key="salesforce.config.dir" value="@{basedir}/orgs/@{orgname}/data"/>
+	                <arg line="process.name=upsertObject"/>
+	            </java>-->
+				<exec executable="cmd" dir="@{basedir}/dataloader">
+					<arg value="/C" />
+					<arg value="dataUpsert.bat @{basedir}\dataloader\orgs\@{orgname}\data" />                         
+				</exec>
+	        </sequential>
+    </macrodef>
+
+	<macrodef name="sfDelete">
+	    <attribute name="object"/>
+		<attribute name="basedir"/>
+		<attribute name="orgname"/>
+		<attribute name="username"/>
+		<attribute name="password"/>
+		<attribute name="orgserver"/>
+
+	        <sequential>
+	            <echo message="Deleting @{object}"/>
+	            <mkdir dir="@{basedir}/orgs/@{orgname}/data"/>
+	            <copy file="@{basedir}/datascripts/template-delete-process-conf.xml" tofile="@{basedir}/orgs/@{orgname}/data/process-conf.xml" overwrite="true" failonerror="true"/>
+	            <replace file="@{basedir}/orgs/@{orgname}/data/process-conf.xml">
+	                <replacefilter token="_ORGSERVER_" value="@{orgserver}"/>
+	                <replacefilter token="_USERNAME_" value="@{username}"/>
+	                <replacefilter token="_ENCRYPTED_PASSWORD_" value="@{password}"/>
+	                <replacefilter token="_ENCRYPTION_KEY_FILE_" value="@{basedir}/datascripts/dataLoaderEncryption.key"/>
+	                <replacefilter token="_DEBUG_MSG_FILE_" value="@{basedir}/orgs/@{orgname}/data/debug.log"/>
+	                <replacefilter token="_OBJECT_" value="@{object}"/>
+	                <replacefilter token="_DATA_FILENAME_" value="@{basedir}/datascripts/datafiles/@{object}Delete.csv"/>
+	                <replacefilter token="_MAPPING_FILE_" value="@{basedir}/datascripts/delete.sdl"/>
+	                <replacefilter token="_OUTPUT_SUCCESS_FILE_" value="@{basedir}/orgs/@{orgname}/data/@{object}Delete_success.csv"/>
+	                <replacefilter token="_OUTPUT_ERROR_FILE_" value="@{basedir}/orgs/@{orgname}/data/@{object}Delete_error.csv"/>
+	            	<replacefilter token="_PROCESS_NAME_" value="@{object}DeleteProcess"/>
+	            </replace>
+	            <java classname="com.salesforce.dataloader.process.ProcessRunner" classpath="@{basedir}/lib/dataloader-${dataLoaderAPIVersion}.jar" failonerror="true">
+	                <sysproperty key="salesforce.config.dir" value="@{basedir}/orgs/@{orgname}/data"/>
+	                <arg line="process.name=deleteObject"/>
+	            </java>
+	        </sequential>
+	    </macrodef>
+
+
+    <macrodef name="sfExport">
+        <attribute name="object"/>
+		<attribute name="basedir"/>
+		<attribute name="orgname"/>
+		<attribute name="username"/>
+		<attribute name="password"/>
+		<attribute name="orgserver"/>
+		<attribute name="soql"/>
+
+        <sequential>
+            <echo message="Exporting @{object}"/>
+            <mkdir dir="@{basedir}/dataloader/orgs/@{orgname}/data"/>
+            <copy file="@{basedir}/dataloader/datascripts/template-export-process-conf.xml" tofile="@{basedir}/dataloader/orgs/@{orgname}/data/process-conf.xml" overwrite="true" failonerror="true"/>
+            <replace file="@{basedir}/dataloader/orgs/@{orgname}/data/process-conf.xml">
+                <replacefilter token="_ORGSERVER_" value="@{orgserver}"/>
+                <replacefilter token="_USERNAME_" value="@{username}"/>
+                <replacefilter token="_ENCRYPTED_PASSWORD_" value="@{password}"/>
+                <replacefilter token="_ENCRYPTION_KEY_FILE_" value="@{basedir}/dataloader/datascripts/dataLoaderEncryption.key"/>
+                <replacefilter token="_DEBUG_MSG_FILE_" value="@{basedir}/dataloader/orgs/@{orgname}/data/debug.log"/>
+                <replacefilter token="_OBJECT_" value="@{object}"/>
+                <replacefilter token="_DATA_FILENAME_" value="@{basedir}/dataloader/orgs/@{orgname}/data/@{object}Export.csv"/>
+                <replacefilter token="_MAPPING_FILE_" value="@{basedir}/dataloader/datascripts/mappingfiles/@{object}ExportMap.sdl"/>
+                <replacefilter token="_OUTPUT_SUCCESS_FILE_" value="@{basedir}/dataloader/orgs/@{orgname}/data/@{object}Export_success.csv"/>
+                <replacefilter token="_OUTPUT_ERROR_FILE_" value="@{basedir}/dataloader/orgs/@{orgname}/data/@{object}Export_error.csv"/>
+                <replacefilter token="_EXTRACTION_SOQL_" value="@{soql}"/>
+            </replace>
+            <!--<java classname="com.salesforce.dataloader.process.ProcessRunner" classpath="@{basedir}/lib/dataloader-${dataLoaderAPIVersion}.jar" failonerror="true">
+                <sysproperty key="salesforce.config.dir" value="@{basedir}/orgs/@{orgname}/data"/>
+                <arg line="process.name=exportObject"/>
+            </java>-->
+			<exec executable="cmd" dir="@{basedir}/dataloader">
+				<arg value="/C" />
+				<arg value="dataExport.bat @{basedir}\dataloader\orgs\@{orgname}\data" />                         
+			</exec>
+        </sequential>
+    </macrodef>
+
+</project>

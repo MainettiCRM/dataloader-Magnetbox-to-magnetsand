@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Description1__c</fullName>
+        <externalId>false</externalId>
+        <label>Description1</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description2__c</fullName>
+        <externalId>false</externalId>
+        <label>Description2</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Retailer_Code__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DO NOT IRON FUR TRIM</fullName>
+                    <default>false</default>
+                    <label>DO NOT IRON FUR TRIM</label>
+                </value>
+                <value>
+                    <fullName>DO NOT IRON LACE</fullName>
+                    <default>false</default>
+                    <label>DO NOT IRON LACE</label>
+                </value>
+                <value>
+                    <fullName>DO NOT IRON PRINT</fullName>
+                    <default>false</default>
+                    <label>DO NOT IRON PRINT</label>
+                </value>
+                <value>
+                    <fullName>DO NOT IRON TRIM</fullName>
+                    <default>false</default>
+                    <label>DO NOT IRON TRIM</label>
+                </value>
+                <value>
+                    <fullName>DO NOT IRON SHIRRING ELASTIC</fullName>
+                    <default>false</default>
+                    <label>DO NOT IRON SHIRRING ELASTIC</label>
+                </value>
+                <value>
+                    <fullName>FLUORESCENT COLOURS DESIGNED TO FADE</fullName>
+                    <default>false</default>
+                    <label>FLUORESCENT COLOURS DESIGNED TO FADE</label>
+                </value>
+                <value>
+                    <fullName>GENTLY EASE INTO SHAPE</fullName>
+                    <default>false</default>
+                    <label>GENTLY EASE INTO SHAPE</label>
+                </value>
+                <value>
+                    <fullName>IN LAUNDRY BAG</fullName>
+                    <default>false</default>
+                    <label>IN LAUNDRY BAG</label>
+                </value>
+                <value>
+                    <fullName>REMOVE BELT BEFORE WASHING</fullName>
+                    <default>false</default>
+                    <label>REMOVE BELT BEFORE WASHING</label>
+                </value>
+                <value>
+                    <fullName>REMOVE DETACHABLE TRIMS BEFORE WASHING</fullName>
+                    <default>false</default>
+                    <label>REMOVE DETACHABLE TRIMS BEFORE WASHING</label>
+                </value>
+                <value>
+                    <fullName>REMOVE KNEE PADS BEFORE WASHING</fullName>
+                    <default>false</default>
+                    <label>REMOVE KNEE PADS BEFORE WASHING</label>
+                </value>
+                <value>
+                    <fullName>WASH BEFORE WEAR</fullName>
+                    <default>false</default>
+                    <label>WASH BEFORE WEAR</label>
+                </value>
+                <value>
+                    <fullName>Wash deep colours separately</fullName>
+                    <default>false</default>
+                    <label>Wash deep colours separately</label>
+                </value>
+                <value>
+                    <fullName>Reshape whilst damp</fullName>
+                    <default>false</default>
+                    <label>Reshape whilst damp</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>WE</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S_Test</controllingFieldValue>
+                <controllingFieldValue>DBA</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>LOLLYTOGS</controllingFieldValue>
+                <controllingFieldValue>DECATHLON</controllingFieldValue>
+                <valueName>REMOVE DETACHABLE TRIMS BEFORE WASHING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WE</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>LA HALLE</controllingFieldValue>
+                <controllingFieldValue>KMART Australia</controllingFieldValue>
+                <valueName>REMOVE KNEE PADS BEFORE WASHING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>WE</controllingFieldValue>
+                <controllingFieldValue>Peter</controllingFieldValue>
+                <controllingFieldValue>DBA</controllingFieldValue>
+                <controllingFieldValue>James_Test</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>Cargo Retailer</controllingFieldValue>
+                <controllingFieldValue>CENTRIC BRANDS</controllingFieldValue>
+                <controllingFieldValue>DemoRetail02</controllingFieldValue>
+                <controllingFieldValue>John Retailer</controllingFieldValue>
+                <valueName>WASH BEFORE WEAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shridhar Retailer Code</controllingFieldValue>
+                <controllingFieldValue>DEMO RETAILER</controllingFieldValue>
+                <controllingFieldValue>Reliance Trends</controllingFieldValue>
+                <controllingFieldValue>GAP</controllingFieldValue>
+                <controllingFieldValue>DBA</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>LOLLYTOGS</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S</controllingFieldValue>
+                <controllingFieldValue>Shridhar Retailer</controllingFieldValue>
+                <valueName>DO NOT IRON FUR TRIM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shridhar Retailer Code</controllingFieldValue>
+                <controllingFieldValue>Peter</controllingFieldValue>
+                <controllingFieldValue>DEMO RETAILER</controllingFieldValue>
+                <controllingFieldValue>Reliance Trends</controllingFieldValue>
+                <controllingFieldValue>GAP</controllingFieldValue>
+                <controllingFieldValue>WINWIN</controllingFieldValue>
+                <controllingFieldValue>James_Test</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>LOLLYTOGS</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S</controllingFieldValue>
+                <controllingFieldValue>Shridhar Retailer</controllingFieldValue>
+                <controllingFieldValue>John Retailer</controllingFieldValue>
+                <valueName>DO NOT IRON LACE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shridhar Retailer Code</controllingFieldValue>
+                <controllingFieldValue>Peter</controllingFieldValue>
+                <controllingFieldValue>DEMO RETAILER</controllingFieldValue>
+                <controllingFieldValue>Reliance Trends</controllingFieldValue>
+                <controllingFieldValue>GAP</controllingFieldValue>
+                <controllingFieldValue>WINWIN</controllingFieldValue>
+                <controllingFieldValue>DBA</controllingFieldValue>
+                <controllingFieldValue>James_Test</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S</controllingFieldValue>
+                <controllingFieldValue>Shridhar Retailer</controllingFieldValue>
+                <controllingFieldValue>John Retailer</controllingFieldValue>
+                <valueName>DO NOT IRON PRINT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shridhar Retailer Code</controllingFieldValue>
+                <controllingFieldValue>DEMO RETAILER</controllingFieldValue>
+                <controllingFieldValue>Reliance Trends</controllingFieldValue>
+                <controllingFieldValue>WINWIN</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S</controllingFieldValue>
+                <controllingFieldValue>William John</controllingFieldValue>
+                <controllingFieldValue>Shridhar Retailer</controllingFieldValue>
+                <valueName>DO NOT IRON TRIM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shridhar Retailer Code</controllingFieldValue>
+                <controllingFieldValue>Peter</controllingFieldValue>
+                <controllingFieldValue>DEMO RETAILER</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S_Test</controllingFieldValue>
+                <controllingFieldValue>Reliance Trends</controllingFieldValue>
+                <controllingFieldValue>James_Test</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>JC PENNEY</controllingFieldValue>
+                <controllingFieldValue>Shridhar Retailer</controllingFieldValue>
+                <controllingFieldValue>John Retailer</controllingFieldValue>
+                <valueName>DO NOT IRON SHIRRING ELASTIC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shridhar Retailer Code</controllingFieldValue>
+                <controllingFieldValue>DEMO RETAILER</controllingFieldValue>
+                <controllingFieldValue>DemoRetail_Catalog</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S_Test</controllingFieldValue>
+                <controllingFieldValue>Reliance Trends</controllingFieldValue>
+                <controllingFieldValue>TU/ SAINSBURY</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>JC PENNEY</controllingFieldValue>
+                <controllingFieldValue>Shridhar Retailer</controllingFieldValue>
+                <valueName>FLUORESCENT COLOURS DESIGNED TO FADE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shridhar Retailer Code</controllingFieldValue>
+                <controllingFieldValue>DEMO RETAILER</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S_Test</controllingFieldValue>
+                <controllingFieldValue>Reliance Trends</controllingFieldValue>
+                <controllingFieldValue>DBA</controllingFieldValue>
+                <controllingFieldValue>TU/ SAINSBURY</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>JC PENNEY</controllingFieldValue>
+                <valueName>GENTLY EASE INTO SHAPE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Shridhar Retailer Code</controllingFieldValue>
+                <controllingFieldValue>DEMO RETAILER</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S_Test</controllingFieldValue>
+                <controllingFieldValue>Reliance Trends</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>JC PENNEY</controllingFieldValue>
+                <valueName>IN LAUNDRY BAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Peter</controllingFieldValue>
+                <controllingFieldValue>MACY&apos;S_Test</controllingFieldValue>
+                <controllingFieldValue>Reliance Trends</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>DECATHLON</controllingFieldValue>
+                <valueName>REMOVE BELT BEFORE WASHING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Peter</controllingFieldValue>
+                <controllingFieldValue>James_Test</controllingFieldValue>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>LOLLYTOGS</controllingFieldValue>
+                <controllingFieldValue>DemoRetail02</controllingFieldValue>
+                <controllingFieldValue>John Retailer</controllingFieldValue>
+                <valueName>Wash deep colours separately</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CareLabelRetailer</controllingFieldValue>
+                <controllingFieldValue>DemoRetail02</controllingFieldValue>
+                <valueName>Reshape whilst damp</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Language_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Language-1</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Language-2</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Language-3</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Language-4</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Language_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Language-5</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Position</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Directly after ironing instruction</fullName>
+                    <default>false</default>
+                    <label>Directly after ironing instruction</label>
+                </value>
+                <value>
+                    <fullName>Directly after washing instruction</fullName>
+                    <default>false</default>
+                    <label>Directly after washing instruction</label>
+                </value>
+                <value>
+                    <fullName>Directly after &quot;WITH SIMILAR COLOURS&quot;</fullName>
+                    <default>false</default>
+                    <label>Directly after &quot;WITH SIMILAR COLOURS&quot;</label>
+                </value>
+                <value>
+                    <fullName>Top</fullName>
+                    <default>false</default>
+                    <label>Top</label>
+                </value>
+                <value>
+                    <fullName>Bottom</fullName>
+                    <default>false</default>
+                    <label>Bottom</label>
+                </value>
+                <value>
+                    <fullName>Directly after drying instructions</fullName>
+                    <default>false</default>
+                    <label>Directly after drying instructions</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Retailer_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Retailer Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>CareLabelRetailer</fullName>
+                    <default>false</default>
+                    <label>CareLabelRetailer</label>
+                </value>
+                <value>
+                    <fullName>Cargo Retailer</fullName>
+                    <default>false</default>
+                    <label>Cargo Retailer</label>
+                </value>
+                <value>
+                    <fullName>CENTRIC BRANDS</fullName>
+                    <default>false</default>
+                    <label>CENTRIC BRANDS</label>
+                </value>
+                <value>
+                    <fullName>DBA</fullName>
+                    <default>false</default>
+                    <label>DBA</label>
+                </value>
+                <value>
+                    <fullName>DECATHLON</fullName>
+                    <default>false</default>
+                    <label>DECATHLON</label>
+                </value>
+                <value>
+                    <fullName>DemoRetail_Catalog</fullName>
+                    <default>false</default>
+                    <label>DemoRetail_Catalog</label>
+                </value>
+                <value>
+                    <fullName>DemoRetail02</fullName>
+                    <default>false</default>
+                    <label>DemoRetail02</label>
+                </value>
+                <value>
+                    <fullName>DEMO RETAILER</fullName>
+                    <default>false</default>
+                    <label>DEMO RETAILER</label>
+                </value>
+                <value>
+                    <fullName>GAP</fullName>
+                    <default>false</default>
+                    <label>GAP</label>
+                </value>
+                <value>
+                    <fullName>James_Test</fullName>
+                    <default>false</default>
+                    <label>James_Test</label>
+                </value>
+                <value>
+                    <fullName>JC PENNEY</fullName>
+                    <default>false</default>
+                    <label>JC PENNEY</label>
+                </value>
+                <value>
+                    <fullName>John Retailer</fullName>
+                    <default>false</default>
+                    <label>John Retailer</label>
+                </value>
+                <value>
+                    <fullName>KMART Australia</fullName>
+                    <default>false</default>
+                    <label>KMART Australia</label>
+                </value>
+                <value>
+                    <fullName>LA HALLE</fullName>
+                    <default>false</default>
+                    <label>LA HALLE</label>
+                </value>
+                <value>
+                    <fullName>LOLLYTOGS</fullName>
+                    <default>false</default>
+                    <label>LOLLYTOGS</label>
+                </value>
+                <value>
+                    <fullName>MACY&apos;S</fullName>
+                    <default>false</default>
+                    <label>MACY&apos;S</label>
+                </value>
+                <value>
+                    <fullName>MACY&apos;S_Test</fullName>
+                    <default>false</default>
+                    <label>MACY&apos;S_Test</label>
+                </value>
+                <value>
+                    <fullName>Peter</fullName>
+                    <default>false</default>
+                    <label>Peter</label>
+                </value>
+                <value>
+                    <fullName>Reliance Trends</fullName>
+                    <default>false</default>
+                    <label>Reliance Trends</label>
+                </value>
+                <value>
+                    <fullName>Shridhar Retailer</fullName>
+                    <default>false</default>
+                    <label>Shridhar Retailer</label>
+                </value>
+                <value>
+                    <fullName>Shridhar Retailer Code</fullName>
+                    <default>false</default>
+                    <label>Shridhar Retailer Code</label>
+                </value>
+                <value>
+                    <fullName>TU/ SAINSBURY</fullName>
+                    <default>false</default>
+                    <label>TU/ SAINSBURY</label>
+                </value>
+                <value>
+                    <fullName>WE</fullName>
+                    <default>false</default>
+                    <label>WE</label>
+                </value>
+                <value>
+                    <fullName>William John</fullName>
+                    <default>false</default>
+                    <label>William John</label>
+                </value>
+                <value>
+                    <fullName>WINWIN</fullName>
+                    <default>false</default>
+                    <label>WINWIN</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Retailer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Retailer</label>
+        <referenceTo>Retailer_Code__c</referenceTo>
+        <relationshipLabel>ExCare Instructions</relationshipLabel>
+        <relationshipName>ExCare_Instructions</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>ExCare Instruction</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Description__c</columns>
+        <columns>Language_1__c</columns>
+        <columns>Language_2__c</columns>
+        <columns>Language_3__c</columns>
+        <columns>Language_4__c</columns>
+        <columns>Language_5__c</columns>
+        <columns>Position__c</columns>
+        <columns>Retailer_Code__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Excare  Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>ExCare Instructions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

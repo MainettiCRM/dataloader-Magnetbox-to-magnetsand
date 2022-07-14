@@ -1,0 +1,11 @@
+Load_ID__c=Load_ID__c
+Country__c=Country__c
+Name=Name
+CurrencyIsoCode=CurrencyIsoCode
+EnglishLanguage__c=EnglishLanguage__c
+Language1__c=Language1__c
+Language2__c=Language2__c
+Language3__c=Language3__c
+Language4__c=Language4__c
+Language5__c=Language5__c
+Retailer_Code__c=Retailer_Code__r:\Load_ID__c

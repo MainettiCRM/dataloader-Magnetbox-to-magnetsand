@@ -1,0 +1,2760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Product_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Custom_Header</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Custom_Header</fullName>
+        <fields>Name</fields>
+        <fields>Status__c</fields>
+        <fields>Mainetti_Model__c</fields>
+        <fields>Consolidated_Style__c</fields>
+        <fields>Business_Vertical__c</fields>
+        <fields>Orderable__c</fields>
+        <label>Custom Header</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>
+    <fields>
+        <fullName>A_E_Model__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for A&amp;E model with different model code. Put in as N/A if not applicable to any Mainetti Model.</inlineHelpText>
+        <label>A&amp;E Model</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Vertical__c</fullName>
+        <description>Mainetti Key Business Verticals</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mainetti Key Business Verticals</inlineHelpText>
+        <label>Business Vertical</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hanger Business</fullName>
+                    <default>false</default>
+                    <label>Hangers &amp; Accessories</label>
+                </value>
+                <value>
+                    <fullName>Flexible Packaging</fullName>
+                    <default>false</default>
+                    <label>Flexible Packaging</label>
+                </value>
+                <value>
+                    <fullName>TLA</fullName>
+                    <default>false</default>
+                    <label>TLA</label>
+                </value>
+                <value>
+                    <fullName>Labels &amp; Tickets</fullName>
+                    <default>false</default>
+                    <label>Labels &amp; Tickets</label>
+                </value>
+                <value>
+                    <fullName>MCare</fullName>
+                    <default>false</default>
+                    <label>MCare</label>
+                </value>
+                <value>
+                    <fullName>INTELLIGENT SOLUTIONS</fullName>
+                    <default>false</default>
+                    <label>INTELLIGENT SOLUTIONS</label>
+                </value>
+                <value>
+                    <fullName>New Vertical</fullName>
+                    <default>false</default>
+                    <label>New Vertical</label>
+                </value>
+                <value>
+                    <fullName>ABC123</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>ABC123</label>
+                </value>
+                <value>
+                    <fullName>E-Commerce</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>E-Commerce</label>
+                </value>
+                <value>
+                    <fullName>EAS &amp; RFID</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>EAS &amp; RFID</label>
+                </value>
+                <value>
+                    <fullName>Lables</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Lables</label>
+                </value>
+                <value>
+                    <fullName>M-Care</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>M-Care</label>
+                </value>
+                <value>
+                    <fullName>Polybags</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Polybags</label>
+                </value>
+                <value>
+                    <fullName>RFID</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>RFID</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>COGS_Create__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>COGS Create</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Clips__c</fullName>
+        <externalId>false</externalId>
+        <label>Clips</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Plastic Clips</fullName>
+                    <default>false</default>
+                    <label>Plastic Clips</label>
+                </value>
+                <value>
+                    <fullName>Metal Clips</fullName>
+                    <default>false</default>
+                    <label>Metal Clips</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Consolidated_Style__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>used to group similar models which can be produce with same mould for consolidation purpose.</inlineHelpText>
+        <label>Consolidated Style</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Design_Log_Form__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Design Log Form</label>
+        <referenceTo>Design_Log_Form__c</referenceTo>
+        <relationshipLabel>Products</relationshipLabel>
+        <relationshipName>Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>E_LabelType__c</fullName>
+        <externalId>false</externalId>
+        <label>Label Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Unique_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>External Unique ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hook__c</fullName>
+        <externalId>false</externalId>
+        <label>Hook</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Plastic</fullName>
+                    <default>false</default>
+                    <label>Plastic</label>
+                </value>
+                <value>
+                    <fullName>Metal</fullName>
+                    <default>false</default>
+                    <label>Metal</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Id_Copy__c</fullName>
+        <externalId>false</externalId>
+        <formula>Id
+&amp; MID(&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&quot;,(
+IF(FIND(MID(Id,1,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
++IF(FIND(MID(Id,2,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,2,0)
++IF(FIND(MID(Id,3,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,4,0)
++IF(FIND(MID(Id,4,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,8,0)
++IF(FIND(MID(Id,5,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,16,0)
+)+1,1)
+&amp; MID(&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&quot;,(
+IF(FIND(MID(Id,6,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
++IF(FIND(MID(Id,7,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,2,0)
++IF(FIND(MID(Id,8,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,4,0)
++IF(FIND(MID(Id,9,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,8,0)
++IF(FIND(MID(Id,10,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,16,0)
+)+1,1)
+&amp; MID(&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&quot;,(
+IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0)
++IF(FIND(MID(Id,12,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,2,0)
++IF(FIND(MID(Id,13,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,4,0)
++IF(FIND(MID(Id,14,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,8,0)
++IF(FIND(MID(Id,15,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,16,0)
+)+1,1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Id Copy</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loaded_Data__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Loaded Data</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Local_Develop__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>cogs</description>
+        <externalId>false</externalId>
+        <label>Local Develop</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Mainetti_Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Mainetti Model</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Material__c</fullName>
+        <externalId>false</externalId>
+        <label>Material</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PLASTIC</fullName>
+                    <default>false</default>
+                    <label>PLASTIC</label>
+                </value>
+                <value>
+                    <fullName>METAL</fullName>
+                    <default>false</default>
+                    <label>METAL</label>
+                </value>
+                <value>
+                    <fullName>WOOD</fullName>
+                    <default>false</default>
+                    <label>WOOD</label>
+                </value>
+                <value>
+                    <fullName>SATIN</fullName>
+                    <default>false</default>
+                    <label>SATIN</label>
+                </value>
+                <value>
+                    <fullName>OTHERS</fullName>
+                    <default>false</default>
+                    <label>OTHERS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Orderable__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Ticked if this product is ready for sales</inlineHelpText>
+        <label>Orderable</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Product_Family__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Family</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Sub_category__c</controllingField>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>ACCESSORY</fullName>
+                    <default>false</default>
+                    <label>ACCESSORY</label>
+                </value>
+                <value>
+                    <fullName>BLOOD PRESSURE MONITOR</fullName>
+                    <default>false</default>
+                    <label>BLOOD PRESSURE MONITOR</label>
+                </value>
+                <value>
+                    <fullName>BOTTLE</fullName>
+                    <default>false</default>
+                    <label>BOTTLE</label>
+                </value>
+                <value>
+                    <fullName>BOTTOM</fullName>
+                    <default>false</default>
+                    <label>BOTTOM</label>
+                </value>
+                <value>
+                    <fullName>BOX</fullName>
+                    <default>false</default>
+                    <label>BOX</label>
+                </value>
+                <value>
+                    <fullName>BUCKETS</fullName>
+                    <default>false</default>
+                    <label>BUCKETS</label>
+                </value>
+                <value>
+                    <fullName>CAPS &amp; CLOSURES</fullName>
+                    <default>false</default>
+                    <label>CAPS &amp; CLOSURES</label>
+                </value>
+                <value>
+                    <fullName>CARE LABEL</fullName>
+                    <default>false</default>
+                    <label>CARE LABEL</label>
+                </value>
+                <value>
+                    <fullName>CARGO SEATS</fullName>
+                    <default>false</default>
+                    <label>CARGO SEATS</label>
+                </value>
+                <value>
+                    <fullName>CARTON BOX</fullName>
+                    <default>false</default>
+                    <label>CARTON BOX</label>
+                </value>
+                <value>
+                    <fullName>CARTRIDGE FILTER</fullName>
+                    <default>false</default>
+                    <label>CARTRIDGE FILTER</label>
+                </value>
+                <value>
+                    <fullName>CLEAR SELF-SEAL BAGS</fullName>
+                    <default>false</default>
+                    <label>CLEAR SELF-SEAL BAGS</label>
+                </value>
+                <value>
+                    <fullName>CLIP</fullName>
+                    <default>false</default>
+                    <label>CLIP</label>
+                </value>
+                <value>
+                    <fullName>COMPONENT</fullName>
+                    <default>false</default>
+                    <label>COMPONENT</label>
+                </value>
+                <value>
+                    <fullName>CONNECTOR</fullName>
+                    <default>false</default>
+                    <label>CONNECTOR</label>
+                </value>
+                <value>
+                    <fullName>COTTON BAG</fullName>
+                    <default>false</default>
+                    <label>COTTON BAG</label>
+                </value>
+                <value>
+                    <fullName>CROWN SIZER</fullName>
+                    <default>false</default>
+                    <label>CROWN SIZER</label>
+                </value>
+                <value>
+                    <fullName>EAS HARD TAGS</fullName>
+                    <default>false</default>
+                    <label>EAS HARD TAGS</label>
+                </value>
+                <value>
+                    <fullName>EAS SOFT TAGS</fullName>
+                    <default>false</default>
+                    <label>EAS SOFT TAGS</label>
+                </value>
+                <value>
+                    <fullName>EAS STORE SOLUTIONS</fullName>
+                    <default>false</default>
+                    <label>EAS STORE SOLUTIONS</label>
+                </value>
+                <value>
+                    <fullName>E-COMMERCE BAGS</fullName>
+                    <default>false</default>
+                    <label>E-COMMERCE BAGS</label>
+                </value>
+                <value>
+                    <fullName>FACE MASK</fullName>
+                    <default>false</default>
+                    <label>FACE MASK</label>
+                </value>
+                <value>
+                    <fullName>FACE SHIELD</fullName>
+                    <default>false</default>
+                    <label>FACE SHIELD</label>
+                </value>
+                <value>
+                    <fullName>FLIPPER</fullName>
+                    <default>false</default>
+                    <label>FLIPPER</label>
+                </value>
+                <value>
+                    <fullName>FOAM</fullName>
+                    <default>false</default>
+                    <label>FOAM</label>
+                </value>
+                <value>
+                    <fullName>FOAM COVER</fullName>
+                    <default>false</default>
+                    <label>FOAM COVER</label>
+                </value>
+                <value>
+                    <fullName>FOAM-OTHERS</fullName>
+                    <default>false</default>
+                    <label>FOAM-OTHERS</label>
+                </value>
+                <value>
+                    <fullName>FOAM STRIP</fullName>
+                    <default>false</default>
+                    <label>FOAM STRIP</label>
+                </value>
+                <value>
+                    <fullName>FOOD PACKAGING</fullName>
+                    <default>false</default>
+                    <label>FOOD PACKAGING</label>
+                </value>
+                <value>
+                    <fullName>FRAME</fullName>
+                    <default>false</default>
+                    <label>FRAME</label>
+                </value>
+                <value>
+                    <fullName>GARMENT SHROUDS</fullName>
+                    <default>false</default>
+                    <label>GARMENT SHROUDS</label>
+                </value>
+                <value>
+                    <fullName>GLASTIC</fullName>
+                    <default>false</default>
+                    <label>GLASTIC</label>
+                </value>
+                <value>
+                    <fullName>GLOVE</fullName>
+                    <default>false</default>
+                    <label>GLOVE</label>
+                </value>
+                <value>
+                    <fullName>GOGGLE</fullName>
+                    <default>false</default>
+                    <label>GOGGLE</label>
+                </value>
+                <value>
+                    <fullName>HAND SANITIZER</fullName>
+                    <default>false</default>
+                    <label>HAND SANITIZER</label>
+                </value>
+                <value>
+                    <fullName>HANGER BAR</fullName>
+                    <default>false</default>
+                    <label>HANGER BAR</label>
+                </value>
+                <value>
+                    <fullName>HANGER PACK</fullName>
+                    <default>false</default>
+                    <label>HANGER PACK</label>
+                </value>
+                <value>
+                    <fullName>HOOK</fullName>
+                    <default>false</default>
+                    <label>HOOK</label>
+                </value>
+                <value>
+                    <fullName>HOOK-OTHERS</fullName>
+                    <default>false</default>
+                    <label>HOOK-OTHERS</label>
+                </value>
+                <value>
+                    <fullName>HOOK-SHOES</fullName>
+                    <default>false</default>
+                    <label>HOOK-SHOES</label>
+                </value>
+                <value>
+                    <fullName>INTIMATE</fullName>
+                    <default>false</default>
+                    <label>INTIMATE</label>
+                </value>
+                <value>
+                    <fullName>IONIZER</fullName>
+                    <default>false</default>
+                    <label>IONIZER</label>
+                </value>
+                <value>
+                    <fullName>IRONING MACHINE AND PRESS</fullName>
+                    <default>false</default>
+                    <label>IRONING MACHINE AND PRESS</label>
+                </value>
+                <value>
+                    <fullName>ISOLATION GOWN</fullName>
+                    <default>false</default>
+                    <label>ISOLATION GOWN</label>
+                </value>
+                <value>
+                    <fullName>LANYARD</fullName>
+                    <default>false</default>
+                    <label>LANYARD</label>
+                </value>
+                <value>
+                    <fullName>LIFE VEST</fullName>
+                    <default>false</default>
+                    <label>LIFE VEST</label>
+                </value>
+                <value>
+                    <fullName>LOGO PLAQUE</fullName>
+                    <default>false</default>
+                    <label>LOGO PLAQUE</label>
+                </value>
+                <value>
+                    <fullName>MAIN LABEL</fullName>
+                    <default>false</default>
+                    <label>MAIN LABEL</label>
+                </value>
+                <value>
+                    <fullName>MANNEQUINS</fullName>
+                    <default>false</default>
+                    <label>MANNEQUINS</label>
+                </value>
+                <value>
+                    <fullName>MASK BOX</fullName>
+                    <default>false</default>
+                    <label>MASK BOX</label>
+                </value>
+                <value>
+                    <fullName>MASK CARTON</fullName>
+                    <default>false</default>
+                    <label>MASK CARTON</label>
+                </value>
+                <value>
+                    <fullName>MASK CASE</fullName>
+                    <default>false</default>
+                    <label>MASK CASE</label>
+                </value>
+                <value>
+                    <fullName>MASK FILTER</fullName>
+                    <default>false</default>
+                    <label>MASK FILTER</label>
+                </value>
+                <value>
+                    <fullName>MASK FOLDER</fullName>
+                    <default>false</default>
+                    <label>MASK FOLDER</label>
+                </value>
+                <value>
+                    <fullName>MEDICAL MASK</fullName>
+                    <default>false</default>
+                    <label>MEDICAL MASK</label>
+                </value>
+                <value>
+                    <fullName>NON-VARIABLE HANGTAG</fullName>
+                    <default>false</default>
+                    <label>NON-VARIABLE HANGTAG</label>
+                </value>
+                <value>
+                    <fullName>NON-VARIABLE LABEL</fullName>
+                    <default>false</default>
+                    <label>NON-VARIABLE LABEL</label>
+                </value>
+                <value>
+                    <fullName>NON WOVEN BAG</fullName>
+                    <default>false</default>
+                    <label>NON WOVEN BAG</label>
+                </value>
+                <value>
+                    <fullName>ONLINE SHOPPING</fullName>
+                    <default>false</default>
+                    <label>ONLINE SHOPPING</label>
+                </value>
+                <value>
+                    <fullName>OTHERS</fullName>
+                    <default>false</default>
+                    <label>OTHERS</label>
+                </value>
+                <value>
+                    <fullName>OTHERS-INTELLIGENT SOLUTIONS</fullName>
+                    <default>false</default>
+                    <label>OTHERS-INTELLIGENT SOLUTIONS</label>
+                </value>
+                <value>
+                    <fullName>OUTERWEAR</fullName>
+                    <default>false</default>
+                    <label>OUTERWEAR</label>
+                </value>
+                <value>
+                    <fullName>OVEN BAGS</fullName>
+                    <default>false</default>
+                    <label>OVEN BAGS</label>
+                </value>
+                <value>
+                    <fullName>OXFORD BAG</fullName>
+                    <default>false</default>
+                    <label>OXFORD BAG</label>
+                </value>
+                <value>
+                    <fullName>PAPER BAG</fullName>
+                    <default>false</default>
+                    <label>PAPER BAG</label>
+                </value>
+                <value>
+                    <fullName>PAPER CARTON</fullName>
+                    <default>false</default>
+                    <label>PAPER CARTON</label>
+                </value>
+                <value>
+                    <fullName>PHARMACEUTICAL PACKAGING</fullName>
+                    <default>false</default>
+                    <label>PHARMACEUTICAL PACKAGING</label>
+                </value>
+                <value>
+                    <fullName>PLASTIC BAG</fullName>
+                    <default>false</default>
+                    <label>PLASTIC BAG</label>
+                </value>
+                <value>
+                    <fullName>PLASTIC CARTON</fullName>
+                    <default>false</default>
+                    <label>PLASTIC CARTON</label>
+                </value>
+                <value>
+                    <fullName>PPE PACKAGING</fullName>
+                    <default>false</default>
+                    <label>PPE PACKAGING</label>
+                </value>
+                <value>
+                    <fullName>PRODUCT DISPLAY BAGS</fullName>
+                    <default>false</default>
+                    <label>PRODUCT DISPLAY BAGS</label>
+                </value>
+                <value>
+                    <fullName>PULSE OXIMETER</fullName>
+                    <default>false</default>
+                    <label>PULSE OXIMETER</label>
+                </value>
+                <value>
+                    <fullName>RESPIRATOR</fullName>
+                    <default>false</default>
+                    <label>RESPIRATOR</label>
+                </value>
+                <value>
+                    <fullName>RFID ASSET TRACKING</fullName>
+                    <default>false</default>
+                    <label>RFID ASSET TRACKING</label>
+                </value>
+                <value>
+                    <fullName>RFID DC SOLUTIONS</fullName>
+                    <default>false</default>
+                    <label>RFID DC SOLUTIONS</label>
+                </value>
+                <value>
+                    <fullName>RFID LABELS</fullName>
+                    <default>false</default>
+                    <label>RFID LABELS</label>
+                </value>
+                <value>
+                    <fullName>RFID STORE SOLUTIONS</fullName>
+                    <default>false</default>
+                    <label>RFID STORE SOLUTIONS</label>
+                </value>
+                <value>
+                    <fullName>RING SIZER</fullName>
+                    <default>false</default>
+                    <label>RING SIZER</label>
+                </value>
+                <value>
+                    <fullName>RUBBER GRIPPER</fullName>
+                    <default>false</default>
+                    <label>RUBBER GRIPPER</label>
+                </value>
+                <value>
+                    <fullName>RUBBER-OTHERS</fullName>
+                    <default>false</default>
+                    <label>RUBBER-OTHERS</label>
+                </value>
+                <value>
+                    <fullName>SANITIZING WIPES</fullName>
+                    <default>false</default>
+                    <label>SANITIZING WIPES</label>
+                </value>
+                <value>
+                    <fullName>SCARF</fullName>
+                    <default>false</default>
+                    <label>SCARF</label>
+                </value>
+                <value>
+                    <fullName>SEALS</fullName>
+                    <default>false</default>
+                    <label>SEALS</label>
+                </value>
+                <value>
+                    <fullName>SECURITY TAGS</fullName>
+                    <default>false</default>
+                    <label>SECURITY TAGS</label>
+                </value>
+                <value>
+                    <fullName>SET</fullName>
+                    <default>false</default>
+                    <label>SET</label>
+                </value>
+                <value>
+                    <fullName>SHOPPING BAGS</fullName>
+                    <default>false</default>
+                    <label>SHOPPING BAGS</label>
+                </value>
+                <value>
+                    <fullName>SIDE SIZER</fullName>
+                    <default>false</default>
+                    <label>SIDE SIZER</label>
+                </value>
+                <value>
+                    <fullName>SMART SLEEP GLASSES</fullName>
+                    <default>false</default>
+                    <label>SMART SLEEP GLASSES</label>
+                </value>
+                <value>
+                    <fullName>SQUARE SIZER</fullName>
+                    <default>false</default>
+                    <label>SQUARE SIZER</label>
+                </value>
+                <value>
+                    <fullName>STICKER</fullName>
+                    <default>false</default>
+                    <label>STICKER</label>
+                </value>
+                <value>
+                    <fullName>SUIT</fullName>
+                    <default>false</default>
+                    <label>SUIT</label>
+                </value>
+                <value>
+                    <fullName>SUIT COVER</fullName>
+                    <default>false</default>
+                    <label>SUIT COVER</label>
+                </value>
+                <value>
+                    <fullName>SWIMWEAR</fullName>
+                    <default>false</default>
+                    <label>SWIMWEAR</label>
+                </value>
+                <value>
+                    <fullName>TEMPERATURE KIOSK</fullName>
+                    <default>false</default>
+                    <label>TEMPERATURE KIOSK</label>
+                </value>
+                <value>
+                    <fullName>TOP</fullName>
+                    <default>false</default>
+                    <label>TOP</label>
+                </value>
+                <value>
+                    <fullName>TOP CAP SIZER</fullName>
+                    <default>false</default>
+                    <label>TOP CAP SIZER</label>
+                </value>
+                <value>
+                    <fullName>TRANSIT BAGS</fullName>
+                    <default>false</default>
+                    <label>TRANSIT BAGS</label>
+                </value>
+                <value>
+                    <fullName>TRANSIT BAGS WITH CLOSURE MECHANISM</fullName>
+                    <default>false</default>
+                    <label>TRANSIT BAGS WITH CLOSURE MECHANISM</label>
+                </value>
+                <value>
+                    <fullName>TRANSIT BAGS WITHOUT CLOSURE MECHANISM</fullName>
+                    <default>false</default>
+                    <label>TRANSIT BAGS WITHOUT CLOSURE MECHANISM</label>
+                </value>
+                <value>
+                    <fullName>TUB</fullName>
+                    <default>false</default>
+                    <label>TUB</label>
+                </value>
+                <value>
+                    <fullName>TWIST TIE</fullName>
+                    <default>false</default>
+                    <label>TWIST TIE</label>
+                </value>
+                <value>
+                    <fullName>UVC BOX</fullName>
+                    <default>false</default>
+                    <label>UVC BOX</label>
+                </value>
+                <value>
+                    <fullName>UVC DISINFECTION BAG</fullName>
+                    <default>false</default>
+                    <label>UVC DISINFECTION BAG</label>
+                </value>
+                <value>
+                    <fullName>VARIABLE HANGTAG</fullName>
+                    <default>false</default>
+                    <label>VARIABLE HANGTAG</label>
+                </value>
+                <value>
+                    <fullName>VARIABLE LABEL</fullName>
+                    <default>false</default>
+                    <label>VARIABLE LABEL</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>OTHER TLA</controllingFieldValue>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <controllingFieldValue>E-COMMERCE</controllingFieldValue>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>APPAREL BAGS</controllingFieldValue>
+                <controllingFieldValue>NON-APPAREL BAGS</controllingFieldValue>
+                <controllingFieldValue>OTHER TRIMS</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <controllingFieldValue>SMART DEVICE</controllingFieldValue>
+                <valueName>OTHERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PPE - HEAD</controllingFieldValue>
+                <valueName>FACE SHIELD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PPE - HEAD</controllingFieldValue>
+                <valueName>GOGGLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PPE - BODY</controllingFieldValue>
+                <valueName>GLOVE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PPE - BODY</controllingFieldValue>
+                <valueName>ISOLATION GOWN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PPE - ACCESSORIES</controllingFieldValue>
+                <valueName>MASK CASE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PPE - ACCESSORIES</controllingFieldValue>
+                <valueName>MASK FOLDER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>WOODEN ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>METAL ACCESSORIES</controllingFieldValue>
+                <valueName>CLIP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <valueName>FOAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <valueName>HOOK-OTHERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <valueName>HOOK-SHOES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>LIFE VEST</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>COMPONENTS</controllingFieldValue>
+                <valueName>LOGO PLAQUE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>COMPONENTS</controllingFieldValue>
+                <valueName>RUBBER GRIPPER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>WOODEN ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>METAL ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <valueName>SCARF</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>OTHER-MOULDED</controllingFieldValue>
+                <controllingFieldValue>SEALS</controllingFieldValue>
+                <valueName>SECURITY TAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>STICKER</controllingFieldValue>
+                <valueName>STICKER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PERSONAL CARE</controllingFieldValue>
+                <valueName>HAND SANITIZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PERSONAL CARE</controllingFieldValue>
+                <valueName>SANITIZING WIPES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>CARTRIDGE FILTER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>MASK BOX</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>MASK CARTON</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>MASK FILTER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>PLASTIC BAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <valueName>TWIST TIE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-COMMERCE</controllingFieldValue>
+                <valueName>ONLINE SHOPPING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <valueName>EAS HARD TAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <valueName>EAS SOFT TAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <valueName>EAS STORE SOLUTIONS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <valueName>OTHERS-INTELLIGENT SOLUTIONS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <valueName>RFID ASSET TRACKING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <valueName>RFID DC SOLUTIONS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <valueName>RFID LABELS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <valueName>RFID STORE SOLUTIONS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER-MOULDED</controllingFieldValue>
+                <valueName>ACCESSORY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER-MOULDED</controllingFieldValue>
+                <valueName>BUCKETS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER-MOULDED</controllingFieldValue>
+                <valueName>CAPS &amp; CLOSURES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER-MOULDED</controllingFieldValue>
+                <valueName>CARGO SEATS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER-MOULDED</controllingFieldValue>
+                <valueName>GLASTIC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>BOTTOM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>FRAME</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>HOOK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>INTIMATE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>OUTERWEAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>SET</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>SUIT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>SWIMWEAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER ACCESSORIES</controllingFieldValue>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <controllingFieldValue>ACRYLIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>PAPER HANGERS</controllingFieldValue>
+                <valueName>TOP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APPAREL BAGS</controllingFieldValue>
+                <valueName>CLEAR SELF-SEAL BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APPAREL BAGS</controllingFieldValue>
+                <controllingFieldValue>NON-APPAREL BAGS</controllingFieldValue>
+                <valueName>E-COMMERCE BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APPAREL BAGS</controllingFieldValue>
+                <valueName>GARMENT SHROUDS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APPAREL BAGS</controllingFieldValue>
+                <valueName>PRODUCT DISPLAY BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APPAREL BAGS</controllingFieldValue>
+                <controllingFieldValue>NON-APPAREL BAGS</controllingFieldValue>
+                <valueName>SHOPPING BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APPAREL BAGS</controllingFieldValue>
+                <valueName>TRANSIT BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APPAREL BAGS</controllingFieldValue>
+                <valueName>TRANSIT BAGS WITH CLOSURE MECHANISM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APPAREL BAGS</controllingFieldValue>
+                <valueName>TRANSIT BAGS WITHOUT CLOSURE MECHANISM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SEALS</controllingFieldValue>
+                <valueName>SEALS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>NON-APPAREL BAGS</controllingFieldValue>
+                <valueName>FOOD PACKAGING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>NON-APPAREL BAGS</controllingFieldValue>
+                <valueName>OVEN BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>NON-APPAREL BAGS</controllingFieldValue>
+                <valueName>PHARMACEUTICAL PACKAGING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>NON-APPAREL BAGS</controllingFieldValue>
+                <valueName>PPE PACKAGING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER HANGTAGS</controllingFieldValue>
+                <valueName>NON-VARIABLE HANGTAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PAPER HANGTAGS</controllingFieldValue>
+                <valueName>VARIABLE HANGTAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ADHESIVE LABELS</controllingFieldValue>
+                <valueName>NON-VARIABLE LABEL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ADHESIVE LABELS</controllingFieldValue>
+                <valueName>VARIABLE LABEL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PRINTED FABRIC LABELS</controllingFieldValue>
+                <controllingFieldValue>WOVEN LABELS</controllingFieldValue>
+                <controllingFieldValue>HEAT TRANSFER LABELS</controllingFieldValue>
+                <valueName>CARE LABEL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PRINTED FABRIC LABELS</controllingFieldValue>
+                <controllingFieldValue>WOVEN LABELS</controllingFieldValue>
+                <controllingFieldValue>HEAT TRANSFER LABELS</controllingFieldValue>
+                <valueName>MAIN LABEL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SHOPPING BAGS</controllingFieldValue>
+                <valueName>COTTON BAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SHOPPING BAGS</controllingFieldValue>
+                <valueName>NON WOVEN BAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SHOPPING BAGS</controllingFieldValue>
+                <valueName>OXFORD BAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SHOPPING BAGS</controllingFieldValue>
+                <valueName>PAPER BAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SUIT COVER</controllingFieldValue>
+                <valueName>SUIT COVER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>PLASTIC HANGERS</controllingFieldValue>
+                <controllingFieldValue>WOODEN HANGERS</controllingFieldValue>
+                <controllingFieldValue>METAL HANGERS</controllingFieldValue>
+                <controllingFieldValue>PADDED HANGERS</controllingFieldValue>
+                <valueName>HANGER PACK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SIZER</controllingFieldValue>
+                <valueName>CROWN SIZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SIZER</controllingFieldValue>
+                <valueName>RING SIZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SIZER</controllingFieldValue>
+                <valueName>SIDE SIZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SIZER</controllingFieldValue>
+                <valueName>SQUARE SIZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SIZER</controllingFieldValue>
+                <valueName>TOP CAP SIZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPONENTS</controllingFieldValue>
+                <valueName>COMPONENT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPONENTS</controllingFieldValue>
+                <valueName>CONNECTOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPONENTS</controllingFieldValue>
+                <valueName>FLIPPER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPONENTS</controllingFieldValue>
+                <valueName>HANGER BAR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPONENTS</controllingFieldValue>
+                <valueName>RUBBER-OTHERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CARTON</controllingFieldValue>
+                <valueName>BOX</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMART DEVICE</controllingFieldValue>
+                <valueName>BLOOD PRESSURE MONITOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMART DEVICE</controllingFieldValue>
+                <valueName>IONIZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMART DEVICE</controllingFieldValue>
+                <valueName>IRONING MACHINE AND PRESS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMART DEVICE</controllingFieldValue>
+                <valueName>PULSE OXIMETER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMART DEVICE</controllingFieldValue>
+                <valueName>SMART SLEEP GLASSES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMART DEVICE</controllingFieldValue>
+                <valueName>TEMPERATURE KIOSK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMART DEVICE</controllingFieldValue>
+                <valueName>UVC BOX</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SMART DEVICE</controllingFieldValue>
+                <valueName>UVC DISINFECTION BAG</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MANNEQUINS</controllingFieldValue>
+                <valueName>MANNEQUINS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MASK &amp; RESPIRATOR</controllingFieldValue>
+                <valueName>FACE MASK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MASK &amp; RESPIRATOR</controllingFieldValue>
+                <valueName>MEDICAL MASK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MASK &amp; RESPIRATOR</controllingFieldValue>
+                <valueName>RESPIRATOR</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Source__c</fullName>
+        <description>Cogs upload</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mainetti developer new product or Sourcing from outside</inlineHelpText>
+        <label>Product Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mainetti Product</fullName>
+                    <default>false</default>
+                    <label>Mainetti Product</label>
+                </value>
+                <value>
+                    <fullName>Outside Sourcing</fullName>
+                    <default>false</default>
+                    <label>Outside Sourcing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Category</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Business_Vertical__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HANGERS</fullName>
+                    <default>true</default>
+                    <label>HANGERS</label>
+                </value>
+                <value>
+                    <fullName>ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>SEALS</fullName>
+                    <default>false</default>
+                    <label>SEALS</label>
+                </value>
+                <value>
+                    <fullName>COMPONENTS</fullName>
+                    <default>false</default>
+                    <label>COMPONENTS</label>
+                </value>
+                <value>
+                    <fullName>FLEXIBLE PACKAGING</fullName>
+                    <default>false</default>
+                    <label>FLEXIBLE PACKAGING</label>
+                </value>
+                <value>
+                    <fullName>TLA</fullName>
+                    <default>false</default>
+                    <label>TLA</label>
+                </value>
+                <value>
+                    <fullName>LABELS &amp; TICKETS</fullName>
+                    <default>false</default>
+                    <label>LABELS &amp; TICKETS</label>
+                </value>
+                <value>
+                    <fullName>MCARE</fullName>
+                    <default>false</default>
+                    <label>MCARE</label>
+                </value>
+                <value>
+                    <fullName>OTHERS</fullName>
+                    <default>false</default>
+                    <label>OTHERS</label>
+                </value>
+                <value>
+                    <fullName>OTHER-MOULDED</fullName>
+                    <default>false</default>
+                    <label>OTHER-MOULDED</label>
+                </value>
+                <value>
+                    <fullName>E-COMMERCE</fullName>
+                    <default>false</default>
+                    <label>E-COMMERCE</label>
+                </value>
+                <value>
+                    <fullName>INTELLIGENT SOLUTIONS</fullName>
+                    <default>false</default>
+                    <label>INTELLIGENT SOLUTIONS</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>MCare</controllingFieldValue>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <valueName>MCARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TLA</controllingFieldValue>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <valueName>TLA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <valueName>INTELLIGENT SOLUTIONS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Labels &amp; Tickets</controllingFieldValue>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <valueName>LABELS &amp; TICKETS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <controllingFieldValue>Hanger Business</controllingFieldValue>
+                <valueName>HANGERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <controllingFieldValue>Hanger Business</controllingFieldValue>
+                <valueName>ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <controllingFieldValue>Hanger Business</controllingFieldValue>
+                <valueName>SEALS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <controllingFieldValue>Hanger Business</controllingFieldValue>
+                <valueName>COMPONENTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <controllingFieldValue>Flexible Packaging</controllingFieldValue>
+                <valueName>FLEXIBLE PACKAGING</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <valueName>OTHERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <controllingFieldValue>Hanger Business</controllingFieldValue>
+                <valueName>OTHER-MOULDED</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>New Vertical</controllingFieldValue>
+                <valueName>E-COMMERCE</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Randy_Model__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for Randy model with different model code. Put in as N/A if not applicable to any Mainetti Model.</inlineHelpText>
+        <label>Randy Model</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Retailers__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Put in the Retailer name if the design is mainly for a specific retailer</inlineHelpText>
+        <label>Related Retailers</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Remarks</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Size_Length_e_g_17_43cm__c</fullName>
+        <externalId>false</externalId>
+        <label>Size/Length(e.g.17&quot;/43cm)</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>false</default>
+                    <label>Pending Approval</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Style__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>same as model code. use in other module as reference.</inlineHelpText>
+        <label>Style</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_category__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-category</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Product_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>ACRYLIC HANGERS</fullName>
+                    <default>false</default>
+                    <label>ACRYLIC HANGERS</label>
+                </value>
+                <value>
+                    <fullName>ADHESIVE LABELS</fullName>
+                    <default>false</default>
+                    <label>ADHESIVE LABELS</label>
+                </value>
+                <value>
+                    <fullName>APPAREL BAGS</fullName>
+                    <default>false</default>
+                    <label>APPAREL BAGS</label>
+                </value>
+                <value>
+                    <fullName>CARTON</fullName>
+                    <default>false</default>
+                    <label>CARTON</label>
+                </value>
+                <value>
+                    <fullName>COMPONENTS</fullName>
+                    <default>false</default>
+                    <label>COMPONENTS</label>
+                </value>
+                <value>
+                    <fullName>EAS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>EAS</label>
+                </value>
+                <value>
+                    <fullName>E-COMMERCE</fullName>
+                    <default>false</default>
+                    <label>E-COMMERCE</label>
+                </value>
+                <value>
+                    <fullName>FLEXIBLE PACKAGING</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>FLEXIBLE PACKAGING</label>
+                </value>
+                <value>
+                    <fullName>FOAM</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>FOAM</label>
+                </value>
+                <value>
+                    <fullName>HANG TAGS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>HANG TAGS</label>
+                </value>
+                <value>
+                    <fullName>HEAT TRANSFER</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>HEAT TRANSFER</label>
+                </value>
+                <value>
+                    <fullName>HEAT TRANSFER LABELS</fullName>
+                    <default>false</default>
+                    <label>HEAT TRANSFER LABELS</label>
+                </value>
+                <value>
+                    <fullName>HOOK</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>HOOK</label>
+                </value>
+                <value>
+                    <fullName>INTELLIGENT SOLUTIONS</fullName>
+                    <default>false</default>
+                    <label>INTELLIGENT SOLUTIONS</label>
+                </value>
+                <value>
+                    <fullName>LABEL</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>LABEL</label>
+                </value>
+                <value>
+                    <fullName>MANNEQUINS</fullName>
+                    <default>false</default>
+                    <label>MANNEQUINS</label>
+                </value>
+                <value>
+                    <fullName>MASK &amp; RESPIRATOR</fullName>
+                    <default>false</default>
+                    <label>MASK &amp; RESPIRATOR</label>
+                </value>
+                <value>
+                    <fullName>M-CARE</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>M-CARE</label>
+                </value>
+                <value>
+                    <fullName>METAL ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>METAL ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>METAL HANGERS</fullName>
+                    <default>false</default>
+                    <label>METAL HANGERS</label>
+                </value>
+                <value>
+                    <fullName>NON-APPAREL BAGS</fullName>
+                    <default>false</default>
+                    <label>NON-APPAREL BAGS</label>
+                </value>
+                <value>
+                    <fullName>OTHER-MOULDED</fullName>
+                    <default>false</default>
+                    <label>OTHER-MOULDED</label>
+                </value>
+                <value>
+                    <fullName>OTHERS</fullName>
+                    <default>false</default>
+                    <label>OTHERS</label>
+                </value>
+                <value>
+                    <fullName>OTHER TLA</fullName>
+                    <default>false</default>
+                    <label>OTHER TLA</label>
+                </value>
+                <value>
+                    <fullName>OTHER TRIMS</fullName>
+                    <default>false</default>
+                    <label>OTHER TRIMS</label>
+                </value>
+                <value>
+                    <fullName>PACKING MATERIAL</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PACKING MATERIAL</label>
+                </value>
+                <value>
+                    <fullName>PADDED HANGERS</fullName>
+                    <default>false</default>
+                    <label>PADDED HANGERS</label>
+                </value>
+                <value>
+                    <fullName>PAPER ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>PAPER ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>PAPER BAG</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PAPER BAG</label>
+                </value>
+                <value>
+                    <fullName>PAPER HANGERS</fullName>
+                    <default>false</default>
+                    <label>PAPER HANGERS</label>
+                </value>
+                <value>
+                    <fullName>PAPER HANGTAGS</fullName>
+                    <default>false</default>
+                    <label>PAPER HANGTAGS</label>
+                </value>
+                <value>
+                    <fullName>PERSONAL CARE</fullName>
+                    <default>false</default>
+                    <label>PERSONAL CARE</label>
+                </value>
+                <value>
+                    <fullName>PERSONAL CARE EQUIPMENT</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PERSONAL CARE EQUIPMENT</label>
+                </value>
+                <value>
+                    <fullName>PLASTIC HANGERS</fullName>
+                    <default>false</default>
+                    <label>PLASTIC HANGERS</label>
+                </value>
+                <value>
+                    <fullName>POLYBAGS</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>POLYBAGS</label>
+                </value>
+                <value>
+                    <fullName>PPE - ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>PPE - ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>PPE - BODY</fullName>
+                    <default>false</default>
+                    <label>PPE - BODY</label>
+                </value>
+                <value>
+                    <fullName>PPE - HEAD</fullName>
+                    <default>false</default>
+                    <label>PPE - HEAD</label>
+                </value>
+                <value>
+                    <fullName>PRINTED FABRIC LABEL</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PRINTED FABRIC LABEL</label>
+                </value>
+                <value>
+                    <fullName>PRINTED FABRIC LABELS</fullName>
+                    <default>false</default>
+                    <label>PRINTED FABRIC LABELS</label>
+                </value>
+                <value>
+                    <fullName>RFID</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>RFID</label>
+                </value>
+                <value>
+                    <fullName>SEALS</fullName>
+                    <default>false</default>
+                    <label>SEALS</label>
+                </value>
+                <value>
+                    <fullName>SHOPPING BAG</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SHOPPING BAG</label>
+                </value>
+                <value>
+                    <fullName>SHOPPING BAGS</fullName>
+                    <default>false</default>
+                    <label>SHOPPING BAGS</label>
+                </value>
+                <value>
+                    <fullName>SIZER</fullName>
+                    <default>false</default>
+                    <label>SIZER</label>
+                </value>
+                <value>
+                    <fullName>SMART DEVICE</fullName>
+                    <default>false</default>
+                    <label>SMART DEVICE</label>
+                </value>
+                <value>
+                    <fullName>STICKER</fullName>
+                    <default>false</default>
+                    <label>STICKER</label>
+                </value>
+                <value>
+                    <fullName>SUIT COVER</fullName>
+                    <default>false</default>
+                    <label>SUIT COVER</label>
+                </value>
+                <value>
+                    <fullName>WOODEN ACCESSORIES</fullName>
+                    <default>false</default>
+                    <label>WOODEN ACCESSORIES</label>
+                </value>
+                <value>
+                    <fullName>WOODEN HANGERS</fullName>
+                    <default>false</default>
+                    <label>WOODEN HANGERS</label>
+                </value>
+                <value>
+                    <fullName>WOVEN LABEL</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>WOVEN LABEL</label>
+                </value>
+                <value>
+                    <fullName>WOVEN LABELS</fullName>
+                    <default>false</default>
+                    <label>WOVEN LABELS</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>FLEXIBLE PACKAGING</controllingFieldValue>
+                <valueName>APPAREL BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FLEXIBLE PACKAGING</controllingFieldValue>
+                <valueName>NON-APPAREL BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>E-COMMERCE</controllingFieldValue>
+                <valueName>E-COMMERCE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TLA</controllingFieldValue>
+                <valueName>CARTON</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TLA</controllingFieldValue>
+                <valueName>MANNEQUINS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TLA</controllingFieldValue>
+                <controllingFieldValue>OTHERS</controllingFieldValue>
+                <controllingFieldValue>MCARE</controllingFieldValue>
+                <valueName>OTHERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TLA</controllingFieldValue>
+                <valueName>OTHER TLA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TLA</controllingFieldValue>
+                <valueName>SHOPPING BAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>TLA</controllingFieldValue>
+                <valueName>SUIT COVER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LABELS &amp; TICKETS</controllingFieldValue>
+                <valueName>ADHESIVE LABELS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LABELS &amp; TICKETS</controllingFieldValue>
+                <valueName>HEAT TRANSFER LABELS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LABELS &amp; TICKETS</controllingFieldValue>
+                <valueName>OTHER TRIMS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LABELS &amp; TICKETS</controllingFieldValue>
+                <valueName>PAPER HANGTAGS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LABELS &amp; TICKETS</controllingFieldValue>
+                <valueName>PRINTED FABRIC LABELS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LABELS &amp; TICKETS</controllingFieldValue>
+                <valueName>WOVEN LABELS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>OTHER-MOULDED</controllingFieldValue>
+                <valueName>OTHER-MOULDED</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HANGERS</controllingFieldValue>
+                <valueName>ACRYLIC HANGERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HANGERS</controllingFieldValue>
+                <valueName>METAL HANGERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HANGERS</controllingFieldValue>
+                <valueName>PADDED HANGERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HANGERS</controllingFieldValue>
+                <valueName>PAPER HANGERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HANGERS</controllingFieldValue>
+                <valueName>PLASTIC HANGERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HANGERS</controllingFieldValue>
+                <valueName>WOODEN HANGERS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <valueName>ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <valueName>METAL ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <valueName>PAPER ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <valueName>SIZER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <valueName>STICKER</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ACCESSORIES</controllingFieldValue>
+                <valueName>WOODEN ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>COMPONENTS</controllingFieldValue>
+                <valueName>COMPONENTS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MCARE</controllingFieldValue>
+                <valueName>MASK &amp; RESPIRATOR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MCARE</controllingFieldValue>
+                <valueName>PERSONAL CARE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MCARE</controllingFieldValue>
+                <valueName>PPE - ACCESSORIES</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MCARE</controllingFieldValue>
+                <valueName>PPE - BODY</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MCARE</controllingFieldValue>
+                <valueName>PPE - HEAD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MCARE</controllingFieldValue>
+                <valueName>SMART DEVICE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>SEALS</controllingFieldValue>
+                <valueName>SEALS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>INTELLIGENT SOLUTIONS</controllingFieldValue>
+                <valueName>INTELLIGENT SOLUTIONS</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Variable_Data_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Variable Data Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Product_Family__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>NON-VARIABLE LABEL</controllingFieldValue>
+                <controllingFieldValue>VARIABLE LABEL</controllingFieldValue>
+                <controllingFieldValue>RING SIZER</controllingFieldValue>
+                <controllingFieldValue>SIDE SIZER</controllingFieldValue>
+                <controllingFieldValue>CROWN SIZER</controllingFieldValue>
+                <controllingFieldValue>SQUARE SIZER</controllingFieldValue>
+                <controllingFieldValue>TOP CAP SIZER</controllingFieldValue>
+                <controllingFieldValue>EAS HARD TAGS</controllingFieldValue>
+                <controllingFieldValue>EAS SOFT TAGS</controllingFieldValue>
+                <controllingFieldValue>RFID LABELS</controllingFieldValue>
+                <controllingFieldValue>CARE LABEL</controllingFieldValue>
+                <controllingFieldValue>MAIN LABEL</controllingFieldValue>
+                <controllingFieldValue>VARIABLE HANGTAG</controllingFieldValue>
+                <controllingFieldValue>STICKER</controllingFieldValue>
+                <controllingFieldValue>GLOVE</controllingFieldValue>
+                <controllingFieldValue>NON-VARIABLE HANGTAG</controllingFieldValue>
+                <valueName>No</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>VARIABLE LABEL</controllingFieldValue>
+                <controllingFieldValue>RING SIZER</controllingFieldValue>
+                <controllingFieldValue>SIDE SIZER</controllingFieldValue>
+                <controllingFieldValue>CROWN SIZER</controllingFieldValue>
+                <controllingFieldValue>SQUARE SIZER</controllingFieldValue>
+                <controllingFieldValue>TOP CAP SIZER</controllingFieldValue>
+                <controllingFieldValue>EAS HARD TAGS</controllingFieldValue>
+                <controllingFieldValue>EAS SOFT TAGS</controllingFieldValue>
+                <controllingFieldValue>RFID LABELS</controllingFieldValue>
+                <controllingFieldValue>CARE LABEL</controllingFieldValue>
+                <controllingFieldValue>MAIN LABEL</controllingFieldValue>
+                <controllingFieldValue>VARIABLE HANGTAG</controllingFieldValue>
+                <controllingFieldValue>STICKER</controllingFieldValue>
+                <controllingFieldValue>GLOVE</controllingFieldValue>
+                <valueName>Yes</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL( Business_Vertical__c  , &apos;Hanger Business&apos;), &apos;Hangers &amp; Accessories&apos;, TEXT( Business_Vertical__c ))</formula>
+        <label>text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Product</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Business_Vertical__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Material__c</columns>
+        <columns>Status__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Components</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>External_Unique_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type__c</field>
+            <operation>equals</operation>
+            <value>COMPONENTS</value>
+        </filters>
+        <label>All COMPONENTS</label>
+    </listViews>
+    <listViews>
+        <fullName>All_FLIPPER</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>External_Unique_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>FLIPPER</value>
+        </filters>
+        <label>All FLIPPER</label>
+    </listViews>
+    <listViews>
+        <fullName>All_FOAM</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>External_Unique_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Family__c</field>
+            <operation>contains</operation>
+            <value>FOAM</value>
+        </filters>
+        <label>All FOAM</label>
+    </listViews>
+    <listViews>
+        <fullName>All_HOOK</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>External_Unique_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Family__c</field>
+            <operation>contains</operation>
+            <value>HOOK-OTHER</value>
+        </filters>
+        <label>All HOOK</label>
+    </listViews>
+    <listViews>
+        <fullName>All_INTIMATE</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>External_Unique_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Family__c</field>
+            <operation>contains</operation>
+            <value>INTIMATE</value>
+        </filters>
+        <label>All INTIMATE</label>
+    </listViews>
+    <listViews>
+        <fullName>All_OTHERS_PPS</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>External_Unique_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type__c</field>
+            <operation>equals</operation>
+            <value>OTHERS-PPS</value>
+        </filters>
+        <label>All OTHERS-PPS</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Print_Packaging</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>External_Unique_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Type__c</field>
+            <operation>equals</operation>
+            <value>FLEXIBLE PACKAGING</value>
+        </filters>
+        <label>All PRINT &amp; PACKAGING</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_SCARF</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>External_Unique_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Family__c</field>
+            <operation>contains</operation>
+            <value>SCARF</value>
+        </filters>
+        <label>All SCARF</label>
+    </listViews>
+    <listViews>
+        <fullName>All_SECURITY_TAG</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Product_Family__c</field>
+            <operation>contains</operation>
+            <value>SECURITY TAG</value>
+        </filters>
+        <label>All SECURITY TAG</label>
+    </listViews>
+    <listViews>
+        <fullName>AlvinSearch</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Business_Vertical__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Sub_category__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Material__c</columns>
+        <columns>Status__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Vertical__c</field>
+            <operation>equals</operation>
+            <value>EAS &amp; RFID</value>
+        </filters>
+        <label>_AlvinSearch</label>
+        <sharedTo>
+            <role>Sales_Hong_Kong</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>EAS_RFID</fullName>
+        <columns>NAME</columns>
+        <columns>Business_Vertical__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Sub_category__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Orderable__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>Related_Retailers__c</columns>
+        <columns>Variable_Data_Product__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Vertical__c</field>
+            <operation>equals</operation>
+            <value>INTELLIGENT SOLUTIONS</value>
+        </filters>
+        <label>_EAS_RFID</label>
+    </listViews>
+    <listViews>
+        <fullName>Flexible_Packaging</fullName>
+        <columns>NAME</columns>
+        <columns>Business_Vertical__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Sub_category__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Orderable__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>Related_Retailers__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Vertical__c</field>
+            <operation>equals</operation>
+            <value>Flexible Packaging</value>
+        </filters>
+        <label>_Flexible Packaging</label>
+    </listViews>
+    <listViews>
+        <fullName>Labels_Tickets</fullName>
+        <columns>NAME</columns>
+        <columns>Business_Vertical__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Sub_category__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Variable_Data_Product__c</columns>
+        <columns>Orderable__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>Related_Retailers__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Vertical__c</field>
+            <operation>equals</operation>
+            <value>Labels &amp; Tickets</value>
+        </filters>
+        <label>_Labels_Tickets</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Loaded_Products</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Loaded_Data__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Loaded Products</label>
+    </listViews>
+    <listViews>
+        <fullName>M_CARE</fullName>
+        <columns>NAME</columns>
+        <columns>Id_Copy__c</columns>
+        <columns>Business_Vertical__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Sub_category__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Orderable__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>Related_Retailers__c</columns>
+        <columns>Variable_Data_Product__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Vertical__c</field>
+            <operation>equals</operation>
+            <value>MCare</value>
+        </filters>
+        <label>_M-CARE</label>
+        <sharedTo>
+            <role>Administrator_Role</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Approval_for_Sales_Upload</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Business_Vertical__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Sub_category__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Pending Approval</value>
+        </filters>
+        <label>Pending Approval Product</label>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Upload_Checking</fullName>
+        <columns>Business_Vertical__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Sub_category__c</columns>
+        <columns>Product_Family__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>Sales Upload Checking</value>
+        </filters>
+        <label>Ignore Model Checking combination</label>
+        <sharedTo>
+            <role>Sales_Hong_Kong</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>TLA</fullName>
+        <columns>NAME</columns>
+        <columns>Business_Vertical__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Sub_category__c</columns>
+        <columns>Product_Family__c</columns>
+        <columns>Orderable__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>Remarks__c</columns>
+        <columns>Related_Retailers__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Business_Vertical__c</field>
+            <operation>equals</operation>
+            <value>TLA</value>
+        </filters>
+        <label>_TLA</label>
+    </listViews>
+    <listViews>
+        <fullName>Universal_Elite_Program</fullName>
+        <columns>NAME</columns>
+        <columns>Consolidated_Style__c</columns>
+        <columns>Status__c</columns>
+        <columns>Product_Type__c</columns>
+        <columns>Size_Length_e_g_17_43cm__c</columns>
+        <columns>Product_Description__c</columns>
+        <columns>A_E_Model__c</columns>
+        <columns>Mainetti_Model__c</columns>
+        <columns>Randy_Model__c</columns>
+        <columns>External_Unique_ID__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Remarks__c</field>
+            <operation>equals</operation>
+            <value>Universal Elite Program</value>
+        </filters>
+        <label>Universal Elite Program</label>
+    </listViews>
+    <nameField>
+        <label>Product Unique ID</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Products</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Consolidated_Style__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Style__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Size_Length_e_g_17_43cm__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_Description__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>A_E_Model__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Mainetti_Model__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Randy_Model__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Remarks__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Consolidated_Style__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Mainetti_Model__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>A_E_Model__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Randy_Model__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Material__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Family__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Size_Length_e_g_17_43cm__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Remarks__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Consolidated_Style__c</searchFilterFields>
+        <searchFilterFields>Mainetti_Model__c</searchFilterFields>
+        <searchFilterFields>A_E_Model__c</searchFilterFields>
+        <searchFilterFields>Randy_Model__c</searchFilterFields>
+        <searchFilterFields>Product_Description__c</searchFilterFields>
+        <searchFilterFields>Product_Family__c</searchFilterFields>
+        <searchFilterFields>Product_Type__c</searchFilterFields>
+        <searchFilterFields>Remarks__c</searchFilterFields>
+        <searchFilterFields>Size_Length_e_g_17_43cm__c</searchFilterFields>
+        <searchResultsAdditionalFields>Consolidated_Style__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Style__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Mainetti_Model__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>A_E_Model__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Randy_Model__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Description__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Family__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Remarks__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

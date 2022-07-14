@@ -1,0 +1,11 @@
+Load_ID__c=Load_ID__c
+Capex_Company_Name__c=Capex_Company_Name__c
+Capex_Location_code__c=Capex_Location_code__c
+Code__c=Code__c
+CurrencyIsoCode=CurrencyIsoCode
+Next_Num__c=Next_Num__c
+Retailer_Code__c=Retailer_Code__r:\Load_ID__c
+Sys_Serial_Number__c=Sys_Serial_Number__c
+Year__c=Year__c
+Partner__c=Partner__r:\Load_ID__c
+Name=Name

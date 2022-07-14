@@ -1,0 +1,9 @@
+Id=Load_ID__c
+CurrencyIsoCode=CurrencyIsoCode
+ExRate_USD_to_Local__c=ExRate_USD_to_Local__c
+Local_ERP_customer_code__c=Local_ERP_customer_code__c
+Price_Book_Product__c=Price_Book_Product__c
+Price_100_pcs__c=Price_100_pcs__c
+Price_1000_pcs_del__c=Price_1000_pcs_del__c
+MagNET_Price_Code__c=MagNET_Price_Code__c
+Name=Name

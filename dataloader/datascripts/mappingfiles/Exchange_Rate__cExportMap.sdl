@@ -1,0 +1,16 @@
+Id=Load_ID__c
+Active__c=Active__c
+Budget_Capex_Rate__c=Budget_Capex_Rate__c
+CurrencyIsoCode=CurrencyIsoCode
+Ex_Rate_Type__c=Ex_Rate_Type__c
+ExRate_to_Euro__c=ExRate_to_Euro__c
+ExRate_to_USD__c=ExRate_to_USD__c
+Local_Currency__c=Local_Currency__c
+Month__c=Month__c
+Name=Name
+Online_Enquiry_Rate__c=Online_Enquiry_Rate__c
+Requested_Currency__c=Requested_Currency__c
+X2016_Budget_Capex_Rate__c=X2016_Budget_Capex_Rate__c
+Year__c=Year__c
+Capex__c=Capex__c
+Foreign_Currency__c=Foreign_Currency__c
